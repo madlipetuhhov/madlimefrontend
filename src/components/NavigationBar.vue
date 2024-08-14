@@ -2,13 +2,16 @@
   <nav class="navbar">
     <ul class="navbar-list">
       <li class="navbar-item">
-        <router-link to="/">Home</router-link>
+        <router-link to="/portfoolio">Portfoolio</router-link>
       </li>
       <li class="navbar-item">
-        <router-link to="/about">About</router-link>
+        <router-link to="/minust">Minust</router-link>
       </li>
       <li class="navbar-item">
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/hind">Info & hind</router-link>
+      </li>
+      <li class="navbar-item">
+        <router-link to="/kontakt">Kontakt</router-link>
       </li>
     </ul>
   </nav>

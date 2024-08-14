@@ -5,9 +5,16 @@
   <router-view/>
 </template>
 
-<script setup>
-
+<script>
+import {defineComponent} from "vue";
 import NavigationBar from "@/components/NavigationBar.vue";
+
+export default defineComponent({
+  components: {NavigationBar}
+})
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

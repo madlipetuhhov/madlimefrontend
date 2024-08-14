@@ -1,12 +1,10 @@
 <template>
-  <div class="about">
-    <h1>Minust leht</h1>
-  </div>
+  <div>Info ja hinnad</div>
 </template>
 
 <script>
 export default {
-  name: "AboutView"
+  name: "PriceView"
 }
 </script>
 

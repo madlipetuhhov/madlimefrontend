@@ -1,12 +1,10 @@
 <template>
-  <div class="about">
-    <h1>Minust leht</h1>
-  </div>
+<div>Portfoolio</div>
 </template>
 
 <script>
 export default {
-  name: "AboutView"
+  name: "PortfolioView"
 }
 </script>
 
