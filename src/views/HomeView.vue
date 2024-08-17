@@ -103,6 +103,7 @@ export default {
 
 .section-testimonials {
   padding: 9.6rem 0;
+  background-color: #F9F8FA;
 }
 
 .testimonial-heading{

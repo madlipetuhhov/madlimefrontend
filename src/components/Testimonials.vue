@@ -8,14 +8,21 @@
         <p class="testimonial-name">&mdash; Mari Maasikas</p>
       </blockquote>
     </figure>
-
-
+    <button class="btn btn--left">
+      <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
+    </button>
+    <button class="btn btn--right">
+      <PhCaretRight :size="32" weight="light" class="btn-icon"/>
+    </button>
   </div>
 </template>
 
 <script>
+import {PhCaretLeft, PhCaretRight} from "@phosphor-icons/vue";
+
 export default {
-  name: "Testimonials"
+  name: "Testimonials",
+  components: {PhCaretRight, PhCaretLeft}
 }
 </script>
 
@@ -23,13 +30,14 @@ export default {
 .testimonials {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .testimonial {
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 25fr 75fr;
-  width: 70%;
+  width: 75%;
 }
 
 .testimonial-img {
@@ -45,7 +53,34 @@ export default {
 
 .testimonial-name {
   font-size: 1.6rem;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  background: transparent none;
+  border: none;
+  outline: none;
+}
+
+.btn:hover{
   color: #9B89A9;
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  stroke: #1F1B22;
 }
 
 </style>
