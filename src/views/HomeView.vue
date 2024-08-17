@@ -22,15 +22,30 @@
         </div>
       </div>
     </section>
+
+    <section class="section-gallery">
+      <div class="home-gallery">
+        <Gallery/>
+      </div>
+    </section>
+
+    <section class="section-testimonials">
+      <div class="container">
+        <span class="subheading testimonial-heading">Head sõnad klientidelt</span>
+        <Testimonials/>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import Hero from "@/components/Hero.vue";
+import Gallery from "@/components/Gallery.vue";
+import Testimonials from "@/components/Testimonials.vue";
 
 export default {
   name: 'HomeView',
-  components: {Hero},
+  components: {Testimonials, Gallery, Hero},
 }
 </script>
 
@@ -64,7 +79,7 @@ export default {
 .menu-link:visited {
   color: #1F1B22;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .menu-nr:link,
@@ -80,6 +95,18 @@ export default {
 .menu-nr:hover,
 .menu-nr:active {
   color: #6D6076;
+}
+
+.section-gallery {
+  padding: 9.6rem 0;
+}
+
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+
+.testimonial-heading{
+ text-align: center;
 }
 
 
