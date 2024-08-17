@@ -1,8 +1,10 @@
 <template>
-  <nav>
-    <NavigationBar/>
-  </nav>
-  <router-view/>
+  <header class="header">
+    <nav>
+      <NavigationBar/>
+    </nav>
+    <router-view/>
+  </header>
 </template>
 
 <script>
@@ -14,10 +16,12 @@ export default defineComponent({
 })
 
 
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.header {
+  height: 9.6rem;
+  padding: 3.2rem 4.8rem;
+}
 
 </style>

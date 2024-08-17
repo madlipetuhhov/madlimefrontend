@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Minust leht</h1>
+    Minust leht
   </div>
 </template>
 

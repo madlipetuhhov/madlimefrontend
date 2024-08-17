@@ -27,11 +27,11 @@ export default {
 </script>
 
 <style scoped>
-.navbar-list{
+.navbar-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  justify-content: space-between;
 }
 
 .navbar-link:link,
@@ -50,9 +50,14 @@ export default {
   color: #9B89A9;
 }
 
-.navbar-link.logo{
+.navbar-link.logo {
   letter-spacing: 2rem;
   font-size: 6.2rem;
+}
+
+.navbar-link.logo:hover,
+.navbar-link.logo:active {
+  color: #1F1B22;
 }
 
 </style>
