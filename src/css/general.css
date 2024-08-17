@@ -21,10 +21,11 @@ Large: 1.8
 0.75px
 
 02 COLORS
-Brand color / Primary:
+Brand color / Primary: #9B89A9
 Tints:
 
 Shades:
+Text: #1F1B22
 
 Accents:
 
@@ -57,7 +58,7 @@ body {
     font-family: "Questrial", sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: #1F1B22;
 }
 
 /* GENERAL REUSABLE GRID */
