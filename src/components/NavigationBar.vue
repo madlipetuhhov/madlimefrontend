@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-<!--    TODO: maybe change needed - MADLI centered and other menu items on sides-->
+<!--    TODO: maybe change needed - MADLI centered (and made as logo file) and other menu items on sides-->
     <ul class="navbar-list">
       <li class="navbar-item">
         <router-link class="navbar-link" to="/portfoolio">Portfoolio</router-link>
@@ -46,14 +46,13 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
   color: #1F1B22;
-  font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
 }
 
 .navbar-link:hover,
 .navbar-link:active {
-  color: #9B89A9;
+  color: #6D6076;
 }
 
 .navbar-link.logo {

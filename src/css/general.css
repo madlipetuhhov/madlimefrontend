@@ -23,9 +23,11 @@ Large: 1.8
 02 COLORS
 Brand color / Primary: #9B89A9
 Tints:
+#D7D0DD
 
 Shades:
 Text: #1F1B22
+Hover: #6D6076
 
 Accents:
 
@@ -67,4 +69,22 @@ body {
     max-width: 120rem;
     padding: 0 3.2rem;
     margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
 }
