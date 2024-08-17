@@ -1,4 +1,5 @@
 <template>
+<!--  todo: picture full viewport suurune, fotode karusell-->
   <div class="hero">
     <div class="hero-img-box">
       <img class="hero-img" src="../img/hero1.png" alt="Woman posing at sunset."/>
