@@ -61,4 +61,10 @@ body {
     color: #1F1B22;
 }
 
-/* GENERAL REUSABLE GRID */
+/* GENERAL GRID */
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}

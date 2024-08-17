@@ -29,6 +29,7 @@ export default {
 <style>
 .navbar {
   padding: 3.2rem 4.8rem;
+  z-index: 10;
 }
 
 .navbar-list {
