@@ -9,6 +9,7 @@
     <section class="section-menu">
       <div class="container grid grid--3-cols">
             <div class="menu-box">
+<!--   todo: numbrid ka klikatavaks-->
         <p class="menu-nr">01</p>
         <a class="menu-link" href="/portfoolio">Tutvu minu loominguga</a>
       </div>
