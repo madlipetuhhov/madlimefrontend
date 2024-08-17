@@ -57,7 +57,7 @@ export default {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .menu-link:link,

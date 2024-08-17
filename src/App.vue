@@ -22,6 +22,7 @@ export default defineComponent({
 .header {
   position: relative;
 }
+
 .nav {
   position: fixed;
   width: 100%;

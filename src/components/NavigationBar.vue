@@ -47,7 +47,7 @@ export default {
   text-transform: uppercase;
   color: #1F1B22;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .navbar-link:hover,
