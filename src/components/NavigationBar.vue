@@ -1,16 +1,19 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar-nav">
     <ul class="navbar-list">
-      <li class="navbar-item">
+      <li class="navbar-link">
         <router-link to="/portfoolio">Portfoolio</router-link>
       </li>
-      <li class="navbar-item">
+      <li class="navbar-link">
         <router-link to="/minust">Minust</router-link>
       </li>
-      <li class="navbar-item">
+      <li class="navbar-logo">
+        <router-link to="/">MADLI</router-link>
+      </li>
+      <li class="navbar-link">
         <router-link to="/hind">Info & hind</router-link>
       </li>
-      <li class="navbar-item">
+      <li class="navbar-link">
         <router-link to="/kontakt">Kontakt</router-link>
       </li>
     </ul>
@@ -23,6 +26,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.navbar-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
 
 </style>
