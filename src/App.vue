@@ -19,9 +19,6 @@ export default defineComponent({
 </script>
 
 <style>
-.header {
-  height: 9.6rem;
-  padding: 3.2rem 4.8rem;
-}
+
 
 </style>

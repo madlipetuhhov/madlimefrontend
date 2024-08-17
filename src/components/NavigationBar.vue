@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar-nav">
+  <nav class="navbar">
     <ul class="navbar-list">
       <li class="navbar-item">
         <router-link class="navbar-link" to="/portfoolio">Portfoolio</router-link>
@@ -26,7 +26,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.navbar {
+  padding: 3.2rem 4.8rem;
+}
+
 .navbar-list {
   list-style: none;
   display: flex;
