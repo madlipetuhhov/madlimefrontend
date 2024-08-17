@@ -1,5 +1,6 @@
 <template>
   <nav class="navbar">
+<!--    TODO: maybe change needed - MADLI centered and other menu items on sides-->
     <ul class="navbar-list">
       <li class="navbar-item">
         <router-link class="navbar-link" to="/portfoolio">Portfoolio</router-link>
