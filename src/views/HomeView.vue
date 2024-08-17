@@ -6,7 +6,7 @@
       </div>
     </section>
 
-    <section class="section-menu-steps">
+    <section class="container section-menu-steps">
       STEPS
     </section>
   </div>
