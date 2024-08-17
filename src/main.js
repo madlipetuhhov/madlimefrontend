@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import VueAxios from "vue-axios"
 import axios from "axios"
-import "@/css/style.css"
-import "@/css/general.css"
+import "@/assets/css/style.css"
+import "@/assets/css/general.css"
 
 const app = createApp(App)
 

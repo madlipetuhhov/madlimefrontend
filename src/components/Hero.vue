@@ -2,7 +2,7 @@
 <!--  todo: photo carousel-->
   <div class="hero">
     <div class="hero-img-box">
-      <img class="hero-img" src="../img/hero1.png" alt="Woman posing at sunset."/>
+      <img class="hero-img" src="../assets/img/hero1.png" alt="Woman posing at sunset."/>
     </div>
   </div>
 </template>
