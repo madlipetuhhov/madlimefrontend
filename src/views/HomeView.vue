@@ -32,7 +32,7 @@
     <section class="section-testimonials">
       <div class="container">
         <span class="subheading testimonial-heading">Head sõnad klientidelt</span>
-        <Testimonials/>
+        <Testimonials ref="testimonialsRef"/>
       </div>
     </section>
   </div>
@@ -46,6 +46,20 @@ import Testimonials from "@/components/Testimonials.vue";
 export default {
   name: 'HomeView',
   components: {Testimonials, Gallery, Hero},
+  data() {
+    return {
+      testimonialsInfo: []
+    }
+  },
+  methods: {
+    getTestimonialsDataFromComponent() {
+      this.testimonialsInfo = this.$refs.testimonialsRef.getTestimonialsData()
+    }
+  },
+  mounted() {
+    this.getTestimonialsDataFromComponent()
+    this.$refs.testimonialsRef.startAutoRotate()
+  }
 }
 </script>
 
@@ -106,8 +120,8 @@ export default {
   background-color: #F9F8FA;
 }
 
-.testimonial-heading{
- text-align: center;
+.testimonial-heading {
+  text-align: center;
 }
 
 

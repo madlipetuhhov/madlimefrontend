@@ -26,15 +26,16 @@ export default {
   data() {
     return {
       currentTestimonial: 0,
+      autoRotateInterval: null,
       testimonials: [
         {
-          img: require("../assets/img/testimonial/testimonial1.png"),
+          img: require("../assets/img/testimonial/testimonial2.png"),
           alt: "Portrait of client.",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem velit, vulputate eu lacus ut, dictum tempor.",
+          text: "Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem velit, vulputate eu lacus ut, dictum tempor.",
           name: "Mari Maasikas",
         },
         {
-          img: require("../assets/img/testimonial/testimonial2.png"),
+          img: require("../assets/img/testimonial/testimonial1.png"),
           alt: "Portrait of client.",
           text: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
           name: "Liina Lill",
@@ -50,19 +51,31 @@ export default {
   },
   methods: {
     nextTestimonial() {
-      this.currentTestimonialIndex = (this.currentTestimonialIndex + 1) % this.testimonials.length;
+      this.currentTestimonialIndex = (this.currentTestimonialIndex + 1) % this.testimonials.length
     },
     previousTestimonial() {
       this.currentTestimonialIndex =
-          (this.currentTestimonialIndex - 1 + this.testimonials.length) % this.testimonials.length;
+          (this.currentTestimonialIndex - 1 + this.testimonials.length) % this.testimonials.length
     },
     startAutoRotate() {
-      setInterval(this.nextTestimonial, 5000);
+      if (!this.autoRotateInterval) {
+        this.autoRotateInterval = setInterval(this.nextTestimonial, 4000)
+      }
+    },
+    stopAutoRotate() {
+      clearInterval(this.autoRotateInterval)
+      this.autoRotateInterval = null
+    },
+    getTestimonialsData() {
+      return this.testimonials
     },
   },
   mounted() {
-    this.startAutoRotate();
+    this.startAutoRotate()
   },
+  beforeUnmount() {
+    this.stopAutoRotate()
+  }
 }
 </script>
 
