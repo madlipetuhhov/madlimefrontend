@@ -52,12 +52,12 @@ export default {
     }
   },
   methods: {
-    getTestimonialsDataFromComponent() {
-      this.testimonialsInfo = this.$refs.testimonialsRef.getTestimonialsData()
+    getTestimonialsInfoFromComponent() {
+      this.testimonialsInfo = this.$refs.testimonialsRef.getTestimonialsInfo()
     }
   },
   mounted() {
-    this.getTestimonialsDataFromComponent()
+    this.getTestimonialsInfoFromComponent()
     this.$refs.testimonialsRef.startAutoRotate()
   }
 }

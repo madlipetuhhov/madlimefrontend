@@ -8,12 +8,23 @@
         <p class="testimonial-name">&mdash; {{ testimonial.name }}</p>
       </blockquote>
     </figure>
+
     <button class="btn btn--left" @click="previousTestimonial">
       <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
     </button>
     <button class="btn btn--right" @click="nextTestimonial">
       <PhCaretRight :size="32" weight="light" class="btn-icon"/>
     </button>
+
+    <div class="testimonial-pagination">
+      <span
+          v-for="(testimonial, index) in testimonials"
+          :key="index"
+          class="dot"
+          :class="{ active: index === currentTestimonial }"
+          @click="goToTestimonial(index)"
+      ></span>
+    </div>
   </div>
 </template>
 
@@ -51,23 +62,26 @@ export default {
   },
   methods: {
     nextTestimonial() {
-      this.currentTestimonialIndex = (this.currentTestimonialIndex + 1) % this.testimonials.length
+      this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length
     },
     previousTestimonial() {
-      this.currentTestimonialIndex =
-          (this.currentTestimonialIndex - 1 + this.testimonials.length) % this.testimonials.length
+      this.currentTestimonial =
+          (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length
     },
     startAutoRotate() {
       if (!this.autoRotateInterval) {
-        this.autoRotateInterval = setInterval(this.nextTestimonial, 4000)
+        this.autoRotateInterval = setInterval(this.nextTestimonial, 5000)
       }
     },
     stopAutoRotate() {
       clearInterval(this.autoRotateInterval)
       this.autoRotateInterval = null
     },
-    getTestimonialsData() {
+    getTestimonialsInfo() {
       return this.testimonials
+    },
+    goToTestimonial(index) {
+      this.currentTestimonial = index;
     },
   },
   mounted() {
@@ -83,6 +97,7 @@ export default {
 .testimonials {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   position: relative;
 }
 
@@ -90,7 +105,8 @@ export default {
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 25fr 75fr;
-  width: 75%;
+  margin-left: 3.2rem;
+  margin-right: 3.2rem;
 }
 
 .testimonial-img {
@@ -108,6 +124,26 @@ export default {
   font-size: 1.6rem;
 }
 
+.testimonial-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.8rem;
+  background-color: #9B89A9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #1F1B22
+}
+
 .btn {
   cursor: pointer;
   position: absolute;
@@ -121,13 +157,13 @@ export default {
 }
 
 .btn--left {
-  left: 0;
+  left: 1rem;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .btn--right {
-  right: 0;
+  right: 1rem;
   top: 50%;
   transform: translate(50%, -50%);
 }
