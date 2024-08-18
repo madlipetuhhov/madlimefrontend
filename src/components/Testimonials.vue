@@ -9,14 +9,14 @@
       </blockquote>
     </figure>
 
-    <button class="btn btn--left" @click="previousTestimonial">
+    <button class="btn btn--left" @click="prevTestimonial">
       <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
     </button>
     <button class="btn btn--right" @click="nextTestimonial">
       <PhCaretRight :size="32" weight="light" class="btn-icon"/>
     </button>
 
-    <div class="testimonial-pagination">
+    <div class="pagination">
       <span
           v-for="(testimonial, index) in testimonials"
           :key="index"
@@ -64,7 +64,7 @@ export default {
     nextTestimonial() {
       this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length
     },
-    previousTestimonial() {
+    prevTestimonial() {
       this.currentTestimonial =
           (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length
     },
@@ -122,54 +122,6 @@ export default {
 
 .testimonial-name {
   font-size: 1.6rem;
-}
-
-.testimonial-pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.4rem;
-}
-
-.dot {
-  width: 1rem;
-  height: 1rem;
-  margin: 0 0.8rem;
-  background-color: #9B89A9;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: #1F1B22
-}
-
-.btn {
-  cursor: pointer;
-  position: absolute;
-  background: transparent none;
-  border: none;
-  outline: none;
-}
-
-.btn:hover {
-  color: #9B89A9;
-}
-
-.btn--left {
-  left: 1rem;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn--right {
-  right: 1rem;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-
-.btn-icon {
-  stroke: #1F1B22;
 }
 
 </style>

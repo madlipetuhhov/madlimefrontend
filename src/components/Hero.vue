@@ -1,15 +1,86 @@
 <template>
-<!--  todo: photo carousel-->
   <div class="hero">
-    <div class="hero-img-box">
-      <img class="hero-img" src="../assets/img/hero/hero1.png" alt="Woman posing at sunset."/>
+    <figure class="hero-slide" v-for="(hero, index) in slides"
+            :key="index" v-show="index === currentSlide">
+      <img class="hero-img" :src="hero.img" :alt="hero.alt"/>
+    </figure>
+
+    <button class="btn btn--left hero-btn" @click="prevSlide">
+      <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
+    </button>
+    <button class="btn btn--right hero-btn" @click="nextSlide">
+      <PhCaretRight :size="32" weight="light" class="btn-icon"/>
+    </button>
+
+    <div class="pagination hero-pagination">
+      <span
+          v-for="(hero, index) in slides"
+          :key="index"
+          class="dot"
+          :class="{ active: index === currentSlide }"
+          @click="goToSlide(index)"
+      ></span>
     </div>
   </div>
+
 </template>
 
 <script>
+import {PhCaretLeft, PhCaretRight} from "@phosphor-icons/vue";
+
 export default {
-  name: "Hero"
+  name: "Hero",
+  components: {PhCaretRight, PhCaretLeft},
+  data() {
+    return {
+      currentSlide: 0,
+      autoRotateInterval: null,
+      slides: [
+        {
+          img: require("../assets/img/hero/hero1.png"),
+          alt: "Hero photo."
+        },
+        {
+          img: require("../assets/img/hero/hero2.png"),
+          alt: "Hero photo."
+        },
+        {
+          img: require("../assets/img/hero/hero3.png"),
+          alt: "Hero photo."
+        },
+      ],
+    }
+  },
+  methods: {
+    nextSlide() {
+      this.currentSlide = (this.currentSlide + 1) % this.slides.length
+    },
+    prevSlide() {
+      this.currentSlide =
+          (this.currentSlide - 1 + this.slides.length) % this.slides.length
+    },
+    startAutoRotate() {
+      if (!this.autoRotateInterval) {
+        this.autoRotateInterval = setInterval(this.nextTestimonial, 5000)
+      }
+    },
+    stopAutoRotate() {
+      clearInterval(this.autoRotateInterval)
+      this.autoRotateInterval = null
+    },
+    getHeroInfo() {
+      return this.slides
+    },
+    goToSlide(index) {
+      this.currentSlide = index;
+    },
+  },
+  mounted() {
+    this.startAutoRotate()
+  },
+  beforeUnmount() {
+    this.stopAutoRotate()
+  }
 }
 </script>
 
@@ -29,6 +100,22 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-pagination {
+  position: absolute;
+  bottom: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.hero .btn--left {
+  left: 4rem;
+}
+
+.hero .btn--right {
+  right: 4rem;
 }
 
 </style>

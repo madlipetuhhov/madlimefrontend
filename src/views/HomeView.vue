@@ -2,7 +2,7 @@
   <div class="home">
     <section class="section-hero">
       <div>
-        <Hero/>
+        <Hero ref="heroRef"/>
       </div>
     </section>
 
@@ -48,17 +48,24 @@ export default {
   components: {Testimonials, Gallery, Hero},
   data() {
     return {
-      testimonialsInfo: []
+      testimonialsInfo: [],
+      heroInfo:[]
     }
   },
   methods: {
     getTestimonialsInfoFromComponent() {
       this.testimonialsInfo = this.$refs.testimonialsRef.getTestimonialsInfo()
-    }
+    },
+
+    getHeroSlidesInfoFromComponent() {
+      this.heroInfo = this.$refs.heroRef.getHeroInfo()
+    },
   },
   mounted() {
     this.getTestimonialsInfoFromComponent()
     this.$refs.testimonialsRef.startAutoRotate()
+    this.getHeroSlidesInfoFromComponent()
+    this.$refs.heroRef.startAutoRotate()
   }
 }
 </script>
