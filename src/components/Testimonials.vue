@@ -127,7 +127,7 @@ export default {
 .testimonial-pagination {
   display: flex;
   justify-content: center;
-  margin-top: 1.6rem;
+  margin-top: 2.4rem;
 }
 
 .dot {
