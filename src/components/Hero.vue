@@ -1,4 +1,5 @@
 <template>
+<!--  todo: smooth transition-->
   <div class="hero">
     <figure class="hero-slide" v-for="(hero, index) in slides"
             :key="index" v-show="index === currentSlide">
@@ -34,7 +35,7 @@ export default {
   data() {
     return {
       currentSlide: 0,
-      autoRotateInterval: null,
+      autoRotationInterval: null,
       slides: [
         {
           img: require("../assets/img/hero/hero1.png"),
@@ -60,13 +61,13 @@ export default {
           (this.currentSlide - 1 + this.slides.length) % this.slides.length
     },
     startAutoRotate() {
-      if (!this.autoRotateInterval) {
-        this.autoRotateInterval = setInterval(this.nextTestimonial, 5000)
+      if (!this.autoRotationInterval) {
+        this.autoRotationInterval = setInterval(this.nextSlide, 5000)
       }
     },
     stopAutoRotate() {
-      clearInterval(this.autoRotateInterval)
-      this.autoRotateInterval = null
+      clearInterval(this.autoRotationInterval)
+      this.autoRotationInterval = null
     },
     getHeroInfo() {
       return this.slides
@@ -91,6 +92,10 @@ export default {
   height: 100vh;
   overflow: hidden;
   z-index: 1;
+}
+
+.hero-slide{
+  transition: transform 1s ease;
 }
 
 .hero-img {

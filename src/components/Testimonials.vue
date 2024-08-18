@@ -1,4 +1,5 @@
 <template>
+  <!--  todo: smooth transition or moving to an other-->
   <div class="testimonials">
     <figure class="testimonial" v-for="(testimonial, index) in testimonials"
             :key="index" v-show="index === currentTestimonial">
@@ -37,7 +38,7 @@ export default {
   data() {
     return {
       currentTestimonial: 0,
-      autoRotateInterval: null,
+      autoRotationInterval: null,
       testimonials: [
         {
           img: require("../assets/img/testimonial/testimonial2.png"),
@@ -69,13 +70,13 @@ export default {
           (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length
     },
     startAutoRotate() {
-      if (!this.autoRotateInterval) {
-        this.autoRotateInterval = setInterval(this.nextTestimonial, 5000)
+      if (!this.autoRotationInterval) {
+        this.autoRotationInterval = setInterval(this.nextTestimonial, 5000)
       }
     },
     stopAutoRotate() {
-      clearInterval(this.autoRotateInterval)
-      this.autoRotateInterval = null
+      clearInterval(this.autoRotationInterval)
+      this.autoRotationInterval = null
     },
     getTestimonialsInfo() {
       return this.testimonials
