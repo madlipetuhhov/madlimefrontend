@@ -124,9 +124,9 @@ body {
     background-color: #1F1B22
 }
 
-/* ARROW BUTTONS */
+/* CARET */
 
-.btn {
+.caret {
     cursor: pointer;
     position: absolute;
     background: transparent none;
@@ -134,22 +134,22 @@ body {
     outline: none;
 }
 
-.btn:hover {
+.caret:hover {
     color: #9B89A9;
 }
 
-.btn--left {
+.caret--left {
     left: 1rem;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.btn--right {
+.caret--right {
     right: 1rem;
     top: 50%;
     transform: translate(50%, -50%);
 }
 
-.btn-icon {
+.caret-icon {
     stroke: #1F1B22;
 }

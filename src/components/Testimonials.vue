@@ -10,11 +10,11 @@
       </blockquote>
     </figure>
 
-    <button class="btn btn--left" @click="prevTestimonial">
-      <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
+    <button class="caret caret--left" @click="prevTestimonial">
+      <PhCaretLeft :size="32" weight="light" class="caret-icon"/>
     </button>
-    <button class="btn btn--right" @click="nextTestimonial">
-      <PhCaretRight :size="32" weight="light" class="btn-icon"/>
+    <button class="caret caret--right" @click="nextTestimonial">
+      <PhCaretRight :size="32" weight="light" class="caret-icon"/>
     </button>
 
     <div class="pagination">
@@ -98,6 +98,7 @@ export default {
 .testimonials {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
 }
@@ -106,13 +107,16 @@ export default {
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 25fr 75fr;
+  max-width: 70rem;
   margin-left: 3.2rem;
   margin-right: 3.2rem;
+  padding: 4.8rem;
+  background-color: #F9F8FA;
 }
 
 .testimonial-img {
   width: 9.6rem;
-  justify-self: right;
+  justify-self: left;
 }
 
 .testimonial-text {

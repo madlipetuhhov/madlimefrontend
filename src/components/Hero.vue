@@ -6,11 +6,11 @@
       <img class="hero-img" :src="hero.img" :alt="hero.alt"/>
     </figure>
 
-    <button class="btn btn--left hero-btn" @click="prevSlide">
-      <PhCaretLeft :size="32" weight="light" class="btn-icon"/>
+    <button class="caret caret--left hero-btn" @click="prevSlide">
+      <PhCaretLeft :size="32" weight="light" class="caret-icon"/>
     </button>
-    <button class="btn btn--right hero-btn" @click="nextSlide">
-      <PhCaretRight :size="32" weight="light" class="btn-icon"/>
+    <button class="caret caret--right hero-btn" @click="nextSlide">
+      <PhCaretRight :size="32" weight="light" class="caret-icon"/>
     </button>
 
     <div class="pagination hero-pagination">
@@ -115,11 +115,11 @@ export default {
   z-index: 10;
 }
 
-.hero .btn--left {
+.hero .caret--left {
   left: 4rem;
 }
 
-.hero .btn--right {
+.hero .caret--right {
   right: 4rem;
 }
 
