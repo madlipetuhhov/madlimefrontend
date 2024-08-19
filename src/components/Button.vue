@@ -1,27 +1,34 @@
 <template>
-  <button
+  <component
+      :is="link ? 'RouterLink' : 'button'"
       :class="['btn', variant, { 'is-disabled': disabled }]"
-      :disabled="disabled"
-      @click="onClick"
+      :disabled="disabled && !link"
+      :to="link"
+      v-bind="$attrs"
+      @click="handleClick"
   >
     <slot :text="text">{{ text }}</slot>
-  </button>
+  </component>
 </template>
 
 <script>
+import {RouterLink} from "vue-router";
+
 export default {
   name: "Button",
+  components: {RouterLink},
   props: {
     variant: {type: String, default: "btn--light"},
     disabled: {type: Boolean, default: false},
-    text: {type: String, default: "Default Text"},
+    text: {type: String, default: "Button"},
+    link: {type: String, default: ""},
   },
   methods: {
-    onClick(event) {
-      if (!this.disabled) {
+    handleClick(event) {
+      if (!this.disabled && !this.link) {
         this.$emit("event-btn-click", event);
       }
-    },
+    }
   },
 };
 </script>
@@ -32,8 +39,8 @@ export default {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 1.6rem 3.2rem;
   transition: all 0.4s;

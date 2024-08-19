@@ -7,10 +7,10 @@
       <div class="container">
         <div class="cta-text-btn-box">
           <div class="cta-text-box">
-            <p class="cta-text">{{text}}</p>
+            <p class="cta-text">{{ text }}</p>
           </div>
-          <div class="cta-button">
-            <Button>{{ btnText }}</Button>
+          <div class="cta-btn">
+            <Button :link="link">{{ btnText }}</Button>
           </div>
         </div>
       </div>
@@ -20,10 +20,11 @@
 
 <script>
 import Button from "@/components/Button.vue";
+import {RouterLink} from "vue-router";
 
 export default {
   name: "CTA",
-  components: {Button},
+  components: {Button, RouterLink},
   props: {
     img: {
       type: String,
@@ -41,6 +42,10 @@ export default {
       type: String,
       required: true,
     },
+    link: {
+      type: String,
+      required: true,
+    }
   },
 }
 </script>
@@ -48,6 +53,17 @@ export default {
 <style>
 .cta {
   position: relative;
+}
+
+.cta-img-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cta-img {
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
 }
 
 .cta-content {
@@ -75,15 +91,9 @@ export default {
   color: #F9F8FA;
 }
 
-.cta-img-box {
-  width: 100%;
-  overflow: hidden;
+.cta-btn {
+  text-decoration: none;
 }
 
-.cta-img {
-  width: 100%;
-  height: 50rem;
-  object-fit: cover;
-}
 
 </style>

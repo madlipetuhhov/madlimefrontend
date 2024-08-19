@@ -41,7 +41,8 @@
         <CTA img="cta1.png"
              alt="Photo of beautiful nature."
              text="Loodusest inspireeritud fotograafia."
-             btnText="Broneeri fotosessioon"/>
+             btnText="Broneeri fotosessioon"
+             link="/kontakt"/>
       </div>
     </section>
   </div>
