@@ -71,7 +71,7 @@ export default {
 
 .cta-text {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #F9F8FA;
 }
 

@@ -38,9 +38,9 @@
 
     <section class="section-cta">
       <div>
-        <CTA img="cta2.png"
+        <CTA img="cta1.png"
              alt="Photo of beautiful nature."
-             text="Fotograafia, mis on inspireeritud loodusest."
+             text="Loodusest inspireeritud fotograafia."
              btnText="Broneeri fotosessioon"/>
       </div>
     </section>
@@ -123,10 +123,10 @@ export default {
   margin-bottom: 1.2rem;
 }
 
-.menu-link:hover,
-.menu-link:active,
-.menu-nr:hover,
-.menu-nr:active {
+.menu-box:hover .menu-nr,
+.menu-box:hover .menu-link,
+.menu-box:active .menu-nr,
+.menu-box:active .menu-link {
   color: #647656;
 }
 
