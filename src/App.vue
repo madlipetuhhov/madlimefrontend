@@ -1,10 +1,8 @@
 <template>
-  <div class="header">
     <nav class="nav">
       <NavigationBar/>
     </nav>
     <router-view/>
-  </div>
 </template>
 
 <script>
@@ -19,10 +17,6 @@ export default defineComponent({
 </script>
 
 <style>
-.header {
-  position: relative;
-}
-
 .nav {
   position: fixed;
   width: 100%;

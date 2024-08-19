@@ -1,16 +1,16 @@
 <template>
   <div class="cta">
     <div class="cta-img-box">
-      <img class="cta-img" src="../assets/img/cta/cta1.jpg" alt="Photo of beautiful nature."/>
+      <img class="cta-img" :src="require(`@/assets/img/cta/${img}`)" :alt="alt"/>
     </div>
     <div class="cta-content">
       <div class="container">
         <div class="cta-text-btn-box">
           <div class="cta-text-box">
-            <p class="cta-text">Fotograafia, mis on inspireeritud loodusest.</p>
+            <p class="cta-text">{{text}}</p>
           </div>
           <div class="cta-button">
-            <Button>Broneeri fotosessioon</Button>
+            <Button>{{ btnText }}</Button>
           </div>
         </div>
       </div>
@@ -23,7 +23,25 @@ import Button from "@/components/Button.vue";
 
 export default {
   name: "CTA",
-  components: {Button}
+  components: {Button},
+  props: {
+    img: {
+      type: String,
+      required: true,
+    },
+    alt: {
+      type: String,
+      default: "CTA image",
+    },
+    text: {
+      type: String,
+      required: true,
+    },
+    btnText: {
+      type: String,
+      required: true,
+    },
+  },
 }
 </script>
 

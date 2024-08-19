@@ -38,10 +38,12 @@
 
     <section class="section-cta">
       <div>
-        <CTA/>
+        <CTA img="cta2.png"
+             alt="Photo of beautiful nature."
+             text="Fotograafia, mis on inspireeritud loodusest."
+             btnText="Broneeri fotosessioon"/>
       </div>
     </section>
-
   </div>
 </template>
 
@@ -57,7 +59,7 @@ export default {
   data() {
     return {
       testimonialsInfo: [],
-      heroInfo:[]
+      heroInfo: []
     }
   },
   methods: {
