@@ -78,11 +78,11 @@ export default {
       clearInterval(this.autoRotationInterval)
       this.autoRotationInterval = null
     },
-    getTestimonialsInfo() {
-      return this.testimonials
-    },
     goToTestimonial(index) {
       this.currentTestimonial = index;
+    },
+    getTestimonialsInfo() {
+      return this.testimonials
     },
   },
   mounted() {

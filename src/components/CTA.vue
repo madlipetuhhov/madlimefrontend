@@ -20,11 +20,10 @@
 
 <script>
 import Button from "@/components/Button.vue";
-import {RouterLink} from "vue-router";
 
 export default {
   name: "CTA",
-  components: {Button, RouterLink},
+  components: {Button},
   props: {
     img: {
       type: String,

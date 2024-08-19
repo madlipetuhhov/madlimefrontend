@@ -45,6 +45,13 @@
              link="/kontakt"/>
       </div>
     </section>
+
+    <section class="section-footer">
+      <div class="container">
+      <Footer/>
+      </div>
+    </section>
+
   </div>
 </template>
 
@@ -53,10 +60,11 @@ import Hero from "@/components/Hero.vue";
 import Gallery from "@/components/Gallery.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import CTA from "@/components/CTA.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: 'HomeView',
-  components: {CTA, Testimonials, Gallery, Hero},
+  components: {Footer, CTA, Testimonials, Gallery, Hero},
   data() {
     return {
       testimonialsInfo: [],
@@ -147,6 +155,10 @@ export default {
   padding: 9.6rem 0;
   width: 100vw;
   overflow-x: hidden;
+}
+
+.section-footer{
+  padding: 9.6rem 0;
 }
 
 
