@@ -51,9 +51,8 @@ export default {
 }
 
 .btn--light:hover,
-.btn--light:active {
-  color: #1F1B22;
-  box-shadow: 0 0 0 2px #1F1B22;
+.btn--light:active {;
+  background-color: #647656;
 }
 
 .btn--dark:link,
@@ -70,8 +69,8 @@ export default {
 
 /* Disabled */
 .is-disabled {
-  color: #888;
-  box-shadow: 0 0 0 2px #888;
+  color: #8F8F8F;
+  box-shadow: 0 0 0 2px #8F8F8F;
   cursor: not-allowed;
 }
 </style>

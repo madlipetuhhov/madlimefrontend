@@ -117,7 +117,7 @@ export default {
 
 .menu-nr:link,
 .menu-nr:visited {
-  color: #E1DCE5;
+  color: #D1D6CC;
   font-weight: 700;
   font-size: 6.2rem;
   margin-bottom: 1.2rem;
@@ -127,7 +127,7 @@ export default {
 .menu-link:active,
 .menu-nr:hover,
 .menu-nr:active {
-  color: #6D6076;
+  color: #647656;
 }
 
 .section-gallery {
