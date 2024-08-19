@@ -1,15 +1,76 @@
 <template>
-  <button>
-    <slot></slot>
+  <button
+      :class="['btn', variant, { 'is-disabled': disabled }]"
+      :disabled="disabled"
+      @click="onClick"
+  >
+    <slot :text="text">{{ text }}</slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: "Button"
-}
+  name: "Button",
+  props: {
+    variant: {type: String, default: "btn--dark"},
+    disabled: {type: Boolean, default: false},
+    text: {type: String, default: "Default Text"},
+  },
+  methods: {
+    onClick(event) {
+      if (!this.disabled) {
+        this.$emit("event-btn-click", event);
+      }
+    },
+  },
+};
 </script>
 
 <style>
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  background: none;
+  box-shadow: 0 0 0 2px #1F1B22;
+}
 
+.btn--light:link,
+.btn--light:visited {
+  color: #F9F8FA;
+  box-shadow: 0 0 0 2px #F9F8FA;
+}
+
+.btn--light:hover,
+.btn--light:active {
+  color: #1F1B22;
+  box-shadow: 0 0 0 2px #1F1B22;
+}
+
+.btn--dark:link,
+.btn--dark:visited {
+  color: #1F1B22;
+  box-shadow: 0 0 0 2px #1F1B22;
+}
+
+.btn--dark:hover,
+.btn--dark:active {
+  color: #F9F8FA;
+  box-shadow: 0 0 0 2px #F9F8FA;
+}
+
+/* Disabled */
+.is-disabled {
+  color: #888;
+  box-shadow: 0 0 0 2px #888;
+  cursor: not-allowed;
+}
 </style>

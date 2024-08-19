@@ -4,7 +4,7 @@
       <p class="cta-text">Fotograafia, mis on inspireeritud loodusest.</p>
     </div>
     <div class="container cta-button">
-      <Button/>
+      <Button>Broneeri fotosessioon</Button>
     </div>
     <div class="cta-img-box">
       <img class="cta-img" src="../assets/img/cta/cta1.png" alt="Photo of beautiful nature."/>
@@ -22,5 +22,12 @@ export default {
 </script>
 
 <style>
+.cta{
+  position: relative;
+}
+
+.cta-button{
+  position: absolute;
+}
 
 </style>

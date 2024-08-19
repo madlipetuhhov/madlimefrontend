@@ -43,7 +43,7 @@ export default {
         {
           img: require("../assets/img/testimonial/testimonial2.png"),
           alt: "Portrait of client.",
-          text: "Test. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem velit, vulputate eu lacus ut, dictum tempor.",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem velit, vulputate eu lacus ut.",
           name: "Mari Maasikas",
         },
         {
