@@ -21,7 +21,7 @@
       <span
           v-for="(testimonial, index) in testimonials"
           :key="index"
-          class="dot"
+          class="pagination-dot"
           :class="{ active: index === currentTestimonial }"
           @click="goToTestimonial(index)"
       ></span>

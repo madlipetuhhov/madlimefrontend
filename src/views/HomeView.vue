@@ -24,7 +24,7 @@
     </section>
 
     <section class="section-gallery">
-      <div class="home-gallery">
+      <div class="container home-gallery">
         <Gallery/>
       </div>
     </section>
@@ -81,6 +81,8 @@ export default {
 <style>
 .section-hero {
   z-index: 1;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .section-menu {
@@ -140,6 +142,8 @@ export default {
 
 .section-cta {
   padding: 9.6rem 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 

@@ -12,7 +12,7 @@
 export default {
   name: "Button",
   props: {
-    variant: {type: String, default: "btn--dark"},
+    variant: {type: String, default: "btn--light"},
     disabled: {type: Boolean, default: false},
     text: {type: String, default: "Default Text"},
   },
@@ -32,15 +32,16 @@ export default {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   padding: 1.6rem 3.2rem;
-  transition: all 0.3s;
+  transition: all 0.4s;
   border: none;
   cursor: pointer;
   background: none;
-  box-shadow: 0 0 0 2px #1F1B22;
+  color: #F9F8FA;
+  box-shadow: 0 0 0 2px #F9F8FA;
 }
 
 .btn--light:link,

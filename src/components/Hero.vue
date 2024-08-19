@@ -17,7 +17,7 @@
       <span
           v-for="(hero, index) in slides"
           :key="index"
-          class="dot"
+          class="pagination-dot"
           :class="{ active: index === currentSlide }"
           @click="goToSlide(index)"
       ></span>
