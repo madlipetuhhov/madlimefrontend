@@ -154,5 +154,9 @@ export default {
   padding: 9.6rem 0;
 }
 
+.section-gallery{
+  padding: 9.6rem 0;
+}
+
 
 </style>
