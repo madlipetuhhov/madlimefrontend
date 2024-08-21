@@ -21,7 +21,7 @@
   </section>
 
   <section class="section-instagram">
-    <div>Siia tuleb insta plugin</div>
+    <div class="container">Siia tuleb insta plugin</div>
   </section>
 
   <section class="section-cta">
@@ -66,10 +66,5 @@ export default {
 .about-img{
   width: 100%;
 }
-
-.section-instagram{
-  padding: 9.6rem 0;
-}
-
 
 </style>

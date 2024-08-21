@@ -145,19 +145,4 @@ export default {
   text-align: center;
 }
 
-.section-cta {
-  padding: 9.6rem 0;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-.section-footer {
-  padding: 9.6rem 0;
-}
-
-.section-gallery{
-  padding: 9.6rem 0;
-}
-
-
 </style>
