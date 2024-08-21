@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <div class="container">
     <ul class="footer-list">
       <li class="footer-item">
         <router-link class="footer-link" to="/portfoolio">Portfoolio</router-link>
@@ -25,6 +26,7 @@
         </a>
       </li>
     </ul>
+    </div>
   </footer>
 </template>
 

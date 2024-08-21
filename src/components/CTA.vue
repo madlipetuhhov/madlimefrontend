@@ -3,8 +3,7 @@
     <div class="cta-img-box">
       <img class="cta-img" :src="require(`@/assets/img/cta/${img}`)" :alt="alt"/>
     </div>
-    <div class="cta-content">
-      <div class="container">
+    <div class="container cta-content">
         <div class="cta-text-btn-box">
           <div class="cta-text-box">
             <p class="cta-text">{{ text }}</p>
@@ -15,7 +14,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -71,10 +69,6 @@ export default {
   right: 0;
   transform: translateY(-50%);
   width: 100%;
-}
-
-.container {
-  position: relative;
 }
 
 .cta-text-btn-box {

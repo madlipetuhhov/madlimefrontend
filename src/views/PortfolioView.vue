@@ -1,13 +1,16 @@
 <template>
-<div>Portfoolio</div>
+  <Gallery/>
 </template>
 
 <script>
+import Gallery from "@/components/Gallery.vue";
+
 export default {
-  name: "PortfolioView"
+  name: "PortfolioView",
+  components: {Gallery}
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

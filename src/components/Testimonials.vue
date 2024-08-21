@@ -1,23 +1,23 @@
 <template>
   <!--  todo: smooth transition or moving to an other-->
-  <div class="testimonials">
-    <figure class="testimonial" v-for="(testimonial, index) in testimonials"
-            :key="index" v-show="index === currentTestimonial">
-      <img class="testimonial-img" :src="testimonial.img" :alt="testimonial.alt"/>
-      <blockquote>
-        <p class="testimonial-text">{{ testimonial.text }}</p>
-        <p class="testimonial-name">&mdash; {{ testimonial.name }}</p>
-      </blockquote>
-    </figure>
+  <div class="container testimonials">
+      <figure class="testimonial" v-for="(testimonial, index) in testimonials"
+              :key="index" v-show="index === currentTestimonial">
+        <img class="testimonial-img" :src="testimonial.img" :alt="testimonial.alt"/>
+        <blockquote>
+          <p class="testimonial-text">{{ testimonial.text }}</p>
+          <p class="testimonial-name">&mdash; {{ testimonial.name }}</p>
+        </blockquote>
+      </figure>
 
-    <button class="caret caret--left" @click="prevTestimonial">
-      <PhCaretLeft :size="32" weight="light" class="caret-icon"/>
-    </button>
-    <button class="caret caret--right" @click="nextTestimonial">
-      <PhCaretRight :size="32" weight="light" class="caret-icon"/>
-    </button>
+      <button class="caret caret--left" @click="prevTestimonial">
+        <PhCaretLeft :size="32" weight="light" class="caret-icon"/>
+      </button>
+      <button class="caret caret--right" @click="nextTestimonial">
+        <PhCaretRight :size="32" weight="light" class="caret-icon"/>
+      </button>
 
-    <div class="pagination">
+      <div class="pagination">
       <span
           v-for="(testimonial, index) in testimonials"
           :key="index"
@@ -25,8 +25,8 @@
           :class="{ active: index === currentTestimonial }"
           @click="goToTestimonial(index)"
       ></span>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>

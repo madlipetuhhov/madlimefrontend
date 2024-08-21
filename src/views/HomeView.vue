@@ -24,32 +24,25 @@
     </section>
 
     <section class="section-gallery">
-      <div class="container home-gallery">
         <Gallery/>
-      </div>
     </section>
 
     <section class="section-testimonials">
-      <div class="container">
         <span class="subheading testimonial-heading">Head sõnad klientidelt</span>
         <Testimonials ref="testimonialsRef"/>
-      </div>
     </section>
 
     <section class="section-cta">
-      <div>
-        <CTA img="cta1.png"
-             alt="Photo of beautiful nature."
-             text="Loodusest inspireeritud fotograafia."
-             btnText="Broneeri fotosessioon"
-             link="/kontakt"/>
-      </div>
+      <CTA img="cta1.png"
+           alt="Photo of beautiful nature."
+           text="Loodusest inspireeritud fotograafia."
+           btnText="Broneeri fotosessioon"
+           link="/kontakt"/>
+
     </section>
 
     <section class="section-footer">
-      <div class="container">
       <Footer/>
-      </div>
     </section>
 
   </div>
@@ -157,7 +150,7 @@ export default {
   overflow-x: hidden;
 }
 
-.section-footer{
+.section-footer {
   padding: 9.6rem 0;
 }
 
