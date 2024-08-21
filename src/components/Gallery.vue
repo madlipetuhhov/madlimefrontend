@@ -59,17 +59,17 @@ export default {
   display: grid;
   gap: 1.6rem;
   grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
-  grid-auto-rows: 1rem;
+  grid-auto-rows: 1.6rem;
 }
 
 .gallery-item{
   display: flex;
   align-items: center;
   justify-content: center;
+  break-inside: avoid;
 }
 
 .gallery-img {
-  display: block;
   width: 100%;
 }
 
