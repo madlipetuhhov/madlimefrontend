@@ -50,7 +50,7 @@ export default {
         }
       ],
     }
-  }
+  },
 }
 </script>
 
@@ -62,15 +62,10 @@ export default {
   grid-auto-rows: 1.6rem;
 }
 
-.gallery-item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  break-inside: avoid;
-}
-
 .gallery-img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 </style>
