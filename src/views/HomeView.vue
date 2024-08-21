@@ -90,7 +90,7 @@ export default {
 }
 
 .section-menu {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 0 0;
 }
 
 .menu-box {
