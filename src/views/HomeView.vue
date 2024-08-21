@@ -37,8 +37,9 @@
            alt="Photo of beautiful nature."
            text="Loodusest inspireeritud fotograafia."
            btnText="Broneeri fotosessioon"
+           btnVariant="btn--light"
+           textColor="#F9F8FA"
            link="/kontakt"/>
-
     </section>
 
     <section class="section-footer">

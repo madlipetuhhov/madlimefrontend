@@ -70,8 +70,7 @@ export default {
 
 .btn--dark:hover,
 .btn--dark:active {
-  color: #F9F8FA;
-  box-shadow: 0 0 0 2px #F9F8FA;
+  background-color: #9B89A9;
 }
 
 /* Disabled */

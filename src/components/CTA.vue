@@ -4,16 +4,16 @@
       <img class="cta-img" :src="require(`@/assets/img/cta/${img}`)" :alt="alt"/>
     </div>
     <div class="container cta-content">
-        <div class="cta-text-btn-box">
-          <div class="cta-text-box">
-            <p class="cta-text">{{ text }}</p>
-          </div>
-          <div class="cta-btn">
-            <Button :link="link">{{ btnText }}</Button>
-          </div>
+      <div class="cta-text-btn-box">
+        <div class="cta-text-box">
+          <p class="cta-text" :style="{ color: textColor }">{{ text }}</p>
+        </div>
+        <div class="cta-btn">
+          <Button :link="link" :variant="btnVariant">{{ btnText }}</Button>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -35,9 +35,17 @@ export default {
       type: String,
       required: true,
     },
+    textColor: {
+      type: String,
+      default: "#F9F8FA",
+    },
     btnText: {
       type: String,
       required: true,
+    },
+    btnVariant: {
+      type: String,
+      default: "btn--light"
     },
     link: {
       type: String,
@@ -81,7 +89,6 @@ export default {
 .cta-text {
   font-size: 2rem;
   font-weight: 400;
-  color: #F9F8FA;
 }
 
 .cta-btn {

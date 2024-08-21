@@ -1,16 +1,39 @@
 <template>
-  <Gallery/>
+  <section class="section-portfolio">
+    <Gallery/>
+  </section>
+
+  <section class="section-cta">
+    <CTA img="cta3.png"
+         alt="Photo of beautiful nature."
+         text="Loodusest inspireeritud fotograafia."
+         btnText="Tutvu minu looga"
+         btnVariant="btn--dark"
+         textColor="#1F1B22"
+         link="/minust"/>
+  </section>
+
+  <div class="section-footer">
+    <Footer/>
+  </div>
 </template>
 
 <script>
 import Gallery from "@/components/Gallery.vue";
+import Footer from "@/components/Footer.vue";
+import CTA from "@/components/CTA.vue";
 
 export default {
   name: "PortfolioView",
-  components: {Gallery}
+  components: {CTA, Footer, Gallery}
 }
 </script>
 
 <style>
+.section-portfolio{
+  padding: 12.8rem 0;
+}
+
+
 
 </style>
