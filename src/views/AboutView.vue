@@ -17,7 +17,7 @@
           est
           laborum.</p>
       </section>
-      <img class="about-img" src="../assets/img/other/contactpic.jpg" alt="Photo of photographer Madli."/></div>
+      <img class="about-img" src="../assets/img/other/about_madli.png" alt="Photo of photographer Madli."/></div>
   </section>
 
   <section class="section-instagram">
