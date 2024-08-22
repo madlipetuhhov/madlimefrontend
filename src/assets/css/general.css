@@ -122,7 +122,7 @@ body {
     font-weight: 700;
     color: #9B89A9;
     text-transform: uppercase;
-    margin-bottom: 4.8rem;
+    margin-bottom: 3.2rem;
     letter-spacing: 0.75px;
 }
 
@@ -131,7 +131,7 @@ body {
 .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 2.4rem;
+    margin-top: 3.2rem;
 }
 
 .pagination-dot {

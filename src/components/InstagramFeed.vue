@@ -13,7 +13,7 @@
       </div>
       <div class="container">
         <div class="instagram-grid">
-          <div v-for="post in posts.slice(0, 8)" :key="post.id" class="instagram-post">
+          <div v-for="post in posts.slice(0, 10)" :key="post.id" class="instagram-post">
             <a :href="post.permalink" target="_blank">
               <img class="instagram-img" :src="post.media_url" alt="Clickable Instagram photo"/>
             </a>
@@ -68,14 +68,13 @@ export default {
 }
 
 .instagram-exception{
-  z-index: 11;
   font-size: 1.8rem;
 }
 
 .instagram-text {
   position: absolute;
   background-color: rgba(249, 248, 250, 0.9);
-  padding: 3.2rem;
+  padding: 4.8rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -86,13 +85,13 @@ export default {
 .instagram-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.6rem;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .instagram-post {
-  width: 24rem;
-  height: 24rem;
+  width: 21rem;
+  height: 21rem;
   overflow: hidden;
 }
 

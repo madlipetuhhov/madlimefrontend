@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
   <nav class="navbar">
 <!--    TODO: maybe change needed - MADLI centered (and made as logo file) and other menu items on sides-->
     <ul class="navbar-list">
@@ -19,6 +20,7 @@
       </li>
     </ul>
   </nav>
+  </div>
 </template>
 
 <script>
@@ -29,7 +31,7 @@ export default {
 
 <style>
 .navbar {
-  padding: 3.2rem 4.8rem;
+  padding: 3.2rem 0;
   z-index: 10;
 }
 
