@@ -1,9 +1,11 @@
 <template>
   <component
-      :is="link ? 'RouterLink' : 'button'"
+      :is="link ? 'RouterLink' : 'a'"
       :class="['btn', variant, { 'is-disabled': disabled }]"
       :disabled="disabled && !link"
-      :to="link"
+      :href="isExternalLink ? link : undefined"
+      :to="!isExternalLink ? link : undefined"
+      :target="isExternalLink ? '_blank' : undefined"
       v-bind="$attrs"
       @click="handleClick"
   >
@@ -15,18 +17,23 @@
 import {RouterLink} from "vue-router";
 
 export default {
-  name: "Button",
+  name: 'Button',
   components: {RouterLink},
   props: {
-    variant: {type: String, default: "btn--light"},
+    variant: {type: String, default: 'btn--light'},
     disabled: {type: Boolean, default: false},
-    text: {type: String, default: "Button"},
-    link: {type: String, default: ""},
+    text: {type: String, default: 'Button'},
+    link: {type: String, default: ''},
+  },
+  computed: {
+    isExternalLink() {
+      return this.link && /^http/.test(this.link)
+    }
   },
   methods: {
     handleClick(event) {
       if (!this.disabled && !this.link) {
-        this.$emit("event-btn-click", event);
+        this.$emit('event-btn-click', event)
       }
     }
   },
@@ -48,9 +55,9 @@ export default {
   cursor: pointer;
   background: none;
   color: #F9F8FA;
-  box-shadow: 0 0 0 2px #F9F8FA;
 }
 
+.btn--light,
 .btn--light:link,
 .btn--light:visited {
   color: #F9F8FA;
@@ -62,6 +69,19 @@ export default {
   background-color: #647656;
 }
 
+.btn--medium,
+.btn--medium:link,
+.btn--medium:visited {
+  color: #9B89A9;
+  box-shadow: 0 0 0 2px #9B89A9;
+}
+
+.btn--medium:hover,
+.btn--medium:active {
+  background-color: #1F1B22;
+}
+
+.btn--dark,
 .btn--dark:link,
 .btn--dark:visited {
   color: #1F1B22;

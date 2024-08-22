@@ -21,7 +21,7 @@
   </section>
 
   <section class="section-instagram">
-    <div class="container">Siia tuleb insta plugin</div>
+    <InstagramFeed/>
   </section>
 
   <section class="section-cta">
@@ -42,10 +42,11 @@
 <script>
 import Footer from "@/components/Footer.vue";
 import CTA from "@/components/CTA.vue";
+import InstagramFeed from "@/components/InstagramFeed.vue";
 
 export default {
   name: "AboutView",
-  components: {CTA, Footer}
+  components: {InstagramFeed, CTA, Footer}
 }
 </script>
 

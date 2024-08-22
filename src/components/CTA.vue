@@ -75,6 +75,7 @@ export default {
   position: absolute;
   top: 50%;
   right: 0;
+  left:0;
   transform: translateY(-50%);
   width: 100%;
 }
