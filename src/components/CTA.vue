@@ -85,6 +85,8 @@ export default {
   flex-direction: column;
   align-items: flex-end;
   gap: 4.8rem;
+  max-width: 120rem;
+  padding-right: 3.2rem;
 }
 
 .cta-text {

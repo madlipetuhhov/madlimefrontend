@@ -74,14 +74,11 @@ export default {
 
 .instagram-text {
   position: absolute;
-  background-color: rgba(249, 248, 250, 0.88);
-  padding: 3.2rem 0;
+  background-color: rgba(249, 248, 250, 0.9);
+  padding: 3.2rem;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 100vw;
-  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
   box-sizing: border-box;
 }
