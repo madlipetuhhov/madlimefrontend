@@ -51,7 +51,7 @@ export default {
 
 .accordion-header {
   position: relative;
-  background-color: #F9F8FA;
+background-color: #F9F8FA;
   padding: 1.6rem;
 }
 

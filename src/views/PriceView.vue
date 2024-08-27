@@ -212,6 +212,10 @@ export default {
   justify-content: center;
 }
 
+.conditions-btn{
+  padding: 1.6rem;
+}
+
 .section-preparation {
   padding: 9.6rem 0;
 }
