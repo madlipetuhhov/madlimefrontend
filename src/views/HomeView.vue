@@ -28,7 +28,7 @@
     </section>
 
     <section class="section-testimonials">
-        <h2 class="subheading testimonial-heading">Head sõnad klientidelt</h2>
+        <h2 class="subheading heading-center">Head sõnad klientidelt</h2>
         <Testimonials ref="testimonialsRef"/>
     </section>
 
@@ -45,7 +45,6 @@
     <section class="section-footer">
       <Footer/>
     </section>
-
   </div>
 </template>
 
@@ -131,10 +130,6 @@ export default {
 
 .section-testimonials {
   padding: 9.6rem 0;
-}
-
-.testimonial-heading {
-  text-align: center;
 }
 
 </style>

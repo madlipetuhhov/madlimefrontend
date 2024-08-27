@@ -1,6 +1,6 @@
 <template>
   <section class="section-price section-first">
-    <h1 class="heading-primary preparation-heading">Pildistan & hinnad</h1>
+    <h1 class="heading-primary heading-center">Pildistan & hinnad</h1>
     <div class="grid grid--2-cols">
 
       <!--01 Portree-->
@@ -62,7 +62,7 @@
   </section>
 
   <section class="section-experience">
-    <h2 class="subheading preparation-heading">Kogemus</h2>
+    <h2 class="subheading heading-center">Kogemus</h2>
     <div class="container grid grid--4-cols">
       <div class="experience">
         <div class="experience-no">01</div>
@@ -106,8 +106,8 @@
   </section>
 
   <section class="section-preparation">
-    <h2 class="subheading preparation-heading">Fotosessiooniks valmistumine</h2>
-    <Accordion :accordionItems="accordionItems"/>
+    <h2 class="subheading heading-center">Fotosessiooniks valmistumine</h2>
+    <Accordion :accordionItems="accordionItems" variant="accordion--lilac"/>
   </section>
 
   <section class="section-cta">
@@ -216,7 +216,7 @@ export default {
 
 .conditions-btn-background{
   padding: 3.2rem 0;
-  background-color: #F9F8FA;
+  background-color: #F5F3F6;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -224,9 +224,5 @@ export default {
 
 .section-preparation {
   padding: 9.6rem 0;
-}
-
-.preparation-heading {
-  text-align: center;
 }
 </style>

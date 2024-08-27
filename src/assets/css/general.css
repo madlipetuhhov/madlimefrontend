@@ -24,6 +24,7 @@ Large: 1.8
  - Brand color / Primary: #9B89A9 (Mystic Heather / Deep Amethyst)
 Tints:
 #F9F8FA
+#F5F3F6
 
 Shades:
 Text: #1F1B22
@@ -95,11 +96,11 @@ body {
 }
 
 /* SECTIONS GLOBAL STYLES */
-.section-first{
+.section-first {
     padding: 15rem 0 9.6rem 0;
 }
 
-.section-instagram{
+.section-instagram {
     padding: 9.6rem 0;
 }
 
@@ -136,7 +137,7 @@ body {
     line-height: 1.2;
 }
 
-.heading-tertiary{
+.heading-tertiary {
     font-size: 1.8rem;
     line-height: 1.2;
 }
@@ -149,6 +150,10 @@ body {
     text-transform: uppercase;
     margin-bottom: 3.2rem;
     letter-spacing: 0.75px;
+}
+
+.heading-center {
+    text-align: center;
 }
 
 

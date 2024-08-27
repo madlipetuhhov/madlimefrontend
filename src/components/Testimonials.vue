@@ -111,7 +111,7 @@ export default {
   margin-left: 3.2rem;
   margin-right: 3.2rem;
   padding: 4.8rem;
-  background-color: #F9F8FA;
+  background-color: #F5F3F6;
 }
 
 .testimonial-img {

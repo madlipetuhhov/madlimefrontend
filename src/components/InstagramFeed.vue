@@ -73,7 +73,7 @@ export default {
 
 .instagram-text {
   position: absolute;
-  background-color: rgba(249, 248, 250, 0.9);
+  background-color: rgba(245, 243, 246, 0.9);
   padding: 4.8rem;
   top: 50%;
   left: 50%;

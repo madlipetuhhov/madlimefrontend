@@ -1,8 +1,8 @@
 <template>
-  <div class="accordion">
+  <component class="accordion">
     <div class="container">
       <div class="accordion-item" v-for="(item, index) in accordionItems" :key="index">
-        <div class="accordion-header" @click="openSection(index)">
+        <div :class="['accordion-header', variant]" @click="openSection(index)">
           <h3 class="heading-tertiary">{{ item.title }}</h3>
           <button v-if="activeIndex !== index" class="caret caret--down">
             <PhCaretDown :size="32" weight="light" class="caret-icon"/>
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </component>
 </template>
 
 <script>
@@ -26,6 +26,7 @@ export default {
   name: "Accordion",
   components: {PhCaretUp, PhCaretDown},
   props: {
+    variant: {type: String, default: 'accordion--lilac'},
     accordionItems: {
       type: Array,
       required: true,
@@ -51,7 +52,6 @@ export default {
 
 .accordion-header {
   position: relative;
-background-color: #F9F8FA;
   padding: 1.6rem;
 }
 
@@ -66,4 +66,13 @@ background-color: #F9F8FA;
   right: 1.6rem;
   transform: translateY(-50%);
 }
+
+.accordion--lilac{
+  background-color: #F5F3F6;
+}
+
+.accordion--green{
+  background-color: #F0F1EE;
+}
+
 </style>
