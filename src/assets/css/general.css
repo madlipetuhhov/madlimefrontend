@@ -185,6 +185,7 @@ body {
     background: transparent none;
     border: none;
     outline: none;
+    transition: all 0.3s ease;
 }
 
 .caret:hover {
