@@ -58,9 +58,7 @@
         <p class="price-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
       </div>
-
     </div>
-
   </section>
 
   <section class="section-experience">
@@ -69,30 +67,40 @@
       <div class="experience">
         <div class="experience-no">01</div>
         <h3 class="heading-tertiary experience-heading">Saada oma soovid</h3>
-        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
           ut labore et dolore magna aliqua.</p>
       </div>
       <div class="experience">
         <div class="experience-no">02</div>
         <h3 class="heading-tertiary experience-heading">Planeerimine & moodboard</h3>
-        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt
           ut labore et dolore magna aliqua.</p>
       </div>
       <div class="experience">
         <div class="experience-no">03</div>
         <h3 class="heading-tertiary experience-heading">Fotosessioon</h3>
-        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.</p>
+        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. </p>
       </div>
       <div class="experience">
         <div class="experience-no">04</div>
         <h3 class="heading-tertiary experience-heading">Fotode valik & kättesaamine</h3>
-        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt
+          ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt
           ut labore et dolore magna aliqua.</p>
       </div>
-
     </div>
+  </section>
 
+  <section class="section-conditions-btn">
+    <Button class="conditions-btn" text="Tutvu üldtingimustega" link="/tingimused" variant="btn--dark"/>
   </section>
 
   <section class="section-preparation">
@@ -120,10 +128,11 @@
 import Footer from "@/components/Footer.vue";
 import CTA from "@/components/CTA.vue";
 import Accordion from "@/components/Accordion.vue";
+import Button from "@/components/Button.vue";
 
 export default {
   name: "PriceView",
-  components: {Accordion, CTA, Footer},
+  components: {Button, Accordion, CTA, Footer},
   data() {
     return {
       accordionItems: [
@@ -156,10 +165,6 @@ export default {
   margin: 0 auto;
 }
 
-.price-info {
-  background-color: #D1D6CC;
-}
-
 .price-text-box {
   max-width: 32rem;
 }
@@ -185,6 +190,26 @@ export default {
 
 .section-experience {
   padding: 9.6rem 0;
+}
+
+.experience-no{
+
+}
+
+.experience-heading {
+  margin-bottom: 2.4rem;
+}
+
+.experience-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.section-conditions-btn {
+  padding: 9.6rem 0;
+  background-color: #F9F8FA;
+  display: flex;
+  justify-content: center;
 }
 
 .section-preparation {
