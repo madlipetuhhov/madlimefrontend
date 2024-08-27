@@ -48,13 +48,13 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
   color: #1F1B22;
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.4s;
 }
 
 .navbar-link:hover,
 .navbar-link:active {
-  color: #6D6076;
+  color: #7C6E87;
 }
 
 .navbar-link.logo {

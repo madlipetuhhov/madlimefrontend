@@ -46,7 +46,7 @@ export default {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   padding: 1.6rem 3.2rem;

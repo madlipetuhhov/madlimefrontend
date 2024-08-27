@@ -1,18 +1,17 @@
 <template>
-  <section class="section-about">
+  <section class="section-about section-first">
     <div class="container grid grid--2-cols">
       <section class="about-text-box">
+        <h2 class="heading-primary">Kuidas sai alguse minu fototeekond?</h2>
         <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est
           laborum.</p>
         <p class="about-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est
           laborum.</p>
@@ -51,21 +50,16 @@ export default {
 </script>
 
 <style>
-.section-about {
-  padding: 12.8rem 0;
-}
-
 .about-text-box {
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
 .about-text{
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.8rem;
 }
 
 .about-img{
   width: 100%;
 }
-
 </style>

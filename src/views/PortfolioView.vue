@@ -1,5 +1,5 @@
 <template>
-  <section class="section-portfolio">
+  <section class="section-portfolio section-first">
     <Gallery/>
   </section>
 
@@ -30,10 +30,5 @@ export default {
 </script>
 
 <style>
-.section-portfolio{
-  padding: 12.8rem 0;
-}
-
-
 
 </style>

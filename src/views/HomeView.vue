@@ -10,15 +10,15 @@
       <div class="container grid grid--3-cols">
         <div class="menu-box">
           <a class="menu-nr" href="/portfoolio">01</a>
-          <a class="menu-link" href="/portfoolio">Tutvu loominguga</a>
+          <a class="heading-secondary menu-link" href="/portfoolio">Tutvu loominguga</a>
         </div>
         <div class="menu-box">
           <a class="menu-nr" href="/hind">02</a>
-          <a class="menu-link" href="/hind">Vaata hindasid</a>
+          <a class="heading-secondary  menu-link" href="/hind">Vaata hindasid</a>
         </div>
         <div class="menu-box">
           <a class="menu-nr" href="/kontakt">03</a>
-          <a class="menu-link" href="/kontakt">Võta ühendust</a>
+          <a class="heading-secondary  menu-link" href="/kontakt">Võta ühendust</a>
         </div>
       </div>
     </section>
@@ -107,15 +107,7 @@ export default {
 .menu-nr:visited {
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase;
   transition: all 0.4s;
-}
-
-.menu-link:link,
-.menu-link:visited {
-  color: #1F1B22;
-  font-weight: 500;
-  font-size: 1.8rem;
 }
 
 .menu-nr:link,
