@@ -100,7 +100,9 @@
   </section>
 
   <section class="section-conditions-btn">
-    <Button class="conditions-btn" text="Tutvu üldtingimustega" link="/tingimused" variant="btn--dark"/>
+    <div class="conditions-btn-background">
+      <Button class="conditions-btn" text="Tutvu üldtingimustega" link="/tingimused" variant="btn--dark"/>
+    </div>
   </section>
 
   <section class="section-preparation">
@@ -192,8 +194,11 @@ export default {
   padding: 9.6rem 0;
 }
 
-.experience-no{
-
+.experience-no {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #9B89A9;
+  margin-bottom: 1.2rem;
 }
 
 .experience-heading {
@@ -207,13 +212,14 @@ export default {
 
 .section-conditions-btn {
   padding: 9.6rem 0;
-  background-color: #F9F8FA;
-  display: flex;
-  justify-content: center;
 }
 
-.conditions-btn{
-  padding: 1.6rem;
+.conditions-btn-background{
+  padding: 3.2rem 0;
+  background-color: #F9F8FA;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .section-preparation {
