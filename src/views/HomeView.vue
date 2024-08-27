@@ -28,7 +28,7 @@
     </section>
 
     <section class="section-testimonials">
-        <span class="subheading testimonial-heading">Head sõnad klientidelt</span>
+        <h2 class="subheading testimonial-heading">Head sõnad klientidelt</h2>
         <Testimonials ref="testimonialsRef"/>
     </section>
 

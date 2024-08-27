@@ -1,7 +1,16 @@
 <template>
-  <section class="section-price section-first"></section>
+  <section class="container section-price section-first">
+    <h1 class="heading-primary preparation-heading">Pildistan & hinnad</h1>
+
+  </section>
+
+  <section class="container section-experience">
+    <h2 class="subheading preparation-heading">Kogemus</h2>
+
+  </section>
 
   <section class="section-preparation">
+    <h2 class="container subheading preparation-heading">Fotosessiooniks valmistumine</h2>
     <Accordion :accordionItems="accordionItems"/>
   </section>
 
@@ -55,7 +64,15 @@ export default {
 </script>
 
 <style>
-.section-preparation{
+.section-experience{
   padding: 9.6rem 0;
+}
+
+.section-preparation {
+  padding: 9.6rem 0;
+}
+
+.preparation-heading{
+  text-align: center;
 }
 </style>

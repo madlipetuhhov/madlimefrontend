@@ -2,7 +2,7 @@
   <section class="section-about section-first">
     <div class="container grid grid--2-cols">
       <section class="about-text-box">
-        <h2 class="heading-primary">Kuidas sai alguse minu fototeekond?</h2>
+        <h1 class="heading-primary">Kuidas sai alguse minu fototeekond?</h1>
         <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
