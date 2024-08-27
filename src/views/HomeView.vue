@@ -9,15 +9,15 @@
     <section class="section-menu">
       <div class="container grid grid--3-cols">
         <div class="menu-box">
-          <a class="menu-nr" href="/portfoolio">01</a>
+          <a class="menu-no" href="/portfoolio">01</a>
           <a class="heading-secondary menu-link" href="/portfoolio">Tutvu loominguga</a>
         </div>
         <div class="menu-box">
-          <a class="menu-nr" href="/hind">02</a>
+          <a class="menu-no" href="/hind">02</a>
           <a class="heading-secondary  menu-link" href="/hind">Vaata hindasid</a>
         </div>
         <div class="menu-box">
-          <a class="menu-nr" href="/kontakt">03</a>
+          <a class="menu-no" href="/kontakt">03</a>
           <a class="heading-secondary  menu-link" href="/kontakt">Võta ühendust</a>
         </div>
       </div>
@@ -103,24 +103,24 @@ export default {
 
 .menu-link:link,
 .menu-link:visited,
-.menu-nr:link,
-.menu-nr:visited {
+.menu-no:link,
+.menu-no:visited {
   display: inline-block;
   text-decoration: none;
   transition: all 0.4s;
 }
 
-.menu-nr:link,
-.menu-nr:visited {
+.menu-no:link,
+.menu-no:visited {
   color: #D1D6CC;
   font-weight: 700;
   font-size: 6.2rem;
   margin-bottom: 1.2rem;
 }
 
-.menu-box:hover .menu-nr,
+.menu-box:hover .menu-no,
 .menu-box:hover .menu-link,
-.menu-box:active .menu-nr,
+.menu-box:active .menu-no,
 .menu-box:active .menu-link {
   color: #647656;
 }
