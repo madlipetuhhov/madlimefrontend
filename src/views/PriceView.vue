@@ -1,16 +1,31 @@
 <template>
-  <section class="container section-price section-first">
+  <section class="section-price section-first">
     <h1 class="heading-primary preparation-heading">Pildistan & hinnad</h1>
+    <div class="container grid grid--3-cols">
+
+      <div class="price-img-box">
+        <img class="price-img" src="../assets/img/price/portrait.png" alt="Photo example of portrait photo - woman siting at the beach."/>
+      </div>
+      <div class="price-text-box">
+
+        <h3 class="heading-tertiary">Portree</h3>
+        <p class="price-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
 
   </section>
 
-  <section class="container section-experience">
+  <section class="section-experience">
     <h2 class="subheading preparation-heading">Kogemus</h2>
+    <div class="container grid grid--4-cols">
+
+    </div>
 
   </section>
 
   <section class="section-preparation">
-    <h2 class="container subheading preparation-heading">Fotosessiooniks valmistumine</h2>
+    <h2 class="subheading preparation-heading">Fotosessiooniks valmistumine</h2>
     <Accordion :accordionItems="accordionItems"/>
   </section>
 
@@ -64,7 +79,27 @@ export default {
 </script>
 
 <style>
-.section-experience{
+.price-text-box{
+  grid-column: span 2;
+}
+
+.price-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.price-img-box {
+  grid-column: span 1;
+  justify-self: left;
+}
+
+.price-img {
+  width: 24rem;
+  height: 24rem;
+  object-fit: cover;
+}
+
+.section-experience {
   padding: 9.6rem 0;
 }
 
@@ -72,7 +107,7 @@ export default {
   padding: 9.6rem 0;
 }
 
-.preparation-heading{
+.preparation-heading {
   text-align: center;
 }
 </style>
