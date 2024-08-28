@@ -1,38 +1,97 @@
 <template>
-  <div class="container">
-  <nav class="navbar">
-<!--    TODO: maybe change needed - MADLI centered (and made as logo file) and other menu items on sides-->
-    <ul class="navbar-list">
-      <li class="navbar-item">
-        <router-link class="navbar-link" to="/portfoolio">Portfoolio</router-link>
-      </li>
-      <li class="navbar-item">
-        <router-link class="navbar-link" to="/minust">Minust</router-link>
-      </li>
-      <li class="navbar-item">
-        <router-link class="navbar-link logo" to="/">MADLI</router-link>
-      </li>
-      <li class="navbar-item">
-        <router-link class="navbar-link" to="/hind">Info & hind</router-link>
-      </li>
-      <li class="navbar-item">
-        <router-link class="navbar-link" to="/kontakt">Kontakt</router-link>
-      </li>
-    </ul>
-  </nav>
+  <div :class="{'navbar-container': true, 'navbar-hidden': isHidden, 'navbar-visible': !isHidden, 'navbar-background': showBackground}">
+    <nav class="container navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <router-link class="navbar-link" to="/portfoolio">Portfoolio</router-link>
+        </li>
+        <li class="navbar-item">
+          <router-link class="navbar-link" to="/minust">Minust</router-link>
+        </li>
+        <li class="navbar-item">
+          <router-link class="navbar-link logo" to="/">MADLI</router-link>
+        </li>
+        <li class="navbar-item">
+          <router-link class="navbar-link" to="/hind">Info & hind</router-link>
+        </li>
+        <li class="navbar-item">
+          <router-link class="navbar-link" to="/kontakt">Kontakt</router-link>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: "NavigationBar"
+  name: "NavigationBar",
+  data() {
+    return {
+      isHidden: false,
+      showBackground: false,
+      lastScrollTop: 0,
+      heroHeight: 0,
+      isHome: false
+    }
+  },
+  methods: {
+    handleScroll() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+      const hero = document.getElementById('hero')
+
+      if (this.isHome && hero) {
+        // is hero and homeview
+        this.heroHeight = hero.offsetHeight
+        this.showBackground = scrollTop > this.heroHeight
+      } else{
+        this.showBackground = true
+      }
+
+      if (scrollTop > this.lastScrollTop) {
+        // scrolling down
+        this.isHidden = true
+        this.showBackground = true
+      } else {
+        // scrolling up
+        this.isHidden = false
+        this.showBackground = scrollTop > this.heroHeight
+      }
+
+      this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+    }
+  },
+  mounted() {
+    this.isHome = this.$route.path === '/';
+    window.addEventListener('scroll', this.handleScroll)
+    this.handleScroll()
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
 }
 </script>
 
 <style>
-.navbar {
+.navbar-container {
+  transition: all 0.3s ease;
   padding: 3.2rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 10;
+}
+
+.navbar-hidden {
+  top: -15rem;
+}
+
+.navbar-visible {
+  top: 0;
+}
+
+.navbar-background {
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-list {

@@ -1,6 +1,6 @@
 <template>
 <!--  todo: smooth transition-->
-  <div class="hero">
+  <div class="hero" id="hero">
     <figure class="hero-slide" v-for="(hero, index) in slides"
             :key="index" v-show="index === currentSlide">
       <img class="hero-img" :src="hero.img" :alt="hero.alt"/>
