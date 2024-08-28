@@ -95,8 +95,8 @@ export default {
 
 /* Disabled */
 .is-disabled {
-  color: #8F8F8F;
-  box-shadow: 0 0 0 2px #8F8F8F;
+  color: #9A9A9A;
+  box-shadow: 0 0 0 2px #9A9A9A;
   cursor: not-allowed;
 }
 </style>
