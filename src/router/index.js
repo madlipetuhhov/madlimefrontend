@@ -5,6 +5,7 @@ import AboutView from "@/views/AboutView.vue";
 import PriceView from "@/views/PriceView.vue";
 import ContactView from "@/views/ContactView.vue";
 import ConditionsView from "@/views/ConditionsView.vue";
+import PhotoView from "@/views/PhotoView.vue";
 
 const routes = [
     {
@@ -36,6 +37,11 @@ const routes = [
         path: '/tingimused',
         name: 'conditionsRoute',
         component: ConditionsView
+    },
+    {
+        path: '/foto',
+        name: 'photoRoute',
+        component: PhotoView
     },
 ]
 
