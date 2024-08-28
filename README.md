@@ -13,7 +13,7 @@ The objective of this project is to build a professional website for a photograp
 - **Stage 3:** Creating admin view.
 - **Stage 4:** Creating photo selection environment for clients.
 
-You can view a low-fidelity mockup created in Balsamiq on <a href="https://drive.google.com/file/d/1Nx2iOjmuJ4gg25MVboG1L7AaLYcOpDS9/view?usp=sharing" target="_blank">Google Drive</a>.
+You can view a low-fidelity mockup created in Balsamiq on [Google Drive](https://drive.google.com/file/d/1Nx2iOjmuJ4gg25MVboG1L7AaLYcOpDS9/view?usp=sharing).
 
 ## Project setup
 ```
