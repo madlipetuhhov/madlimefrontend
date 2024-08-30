@@ -1,9 +1,16 @@
 <template>
-  <div class="gallery">
-    <div class="container grid--gallery grid--4-cols">
-      <figure class="gallery-item" v-for="photo in photos">
-        <img class="gallery-img" :src="photo.img" :alt="photo.alt"/>
-      </figure>
+  <div class="container gallery">
+    <div class="gallery-col">
+      <img class="gallery-img" v-for="photo in photosCol1" :key="photo.img" :src="photo.img" :alt="photo.alt">
+    </div>
+    <div class="gallery-col">
+      <img class="gallery-img" v-for="photo in photosCol2" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
+    </div>
+    <div class="gallery-col">
+      <img class="gallery-img" v-for="photo in photosCol3" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
+    </div>
+    <div class="gallery-col">
+      <img class="gallery-img" v-for="photo in photosCol4" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
     </div>
   </div>
 </template>
@@ -15,7 +22,25 @@ export default {
   name: "Gallery",
   data() {
     return {
-      photos: [
+      photosCol1: [
+        {
+          img: require("../assets/img/gallery/gallery4.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery9.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery5.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery1.png"),
+          alt: "Gallery photo."
+        }
+      ],
+      photosCol2: [
         {
           img: require("../assets/img/gallery/gallery1.png"),
           alt: "Gallery photo."
@@ -25,7 +50,21 @@ export default {
           alt: "Gallery photo."
         },
         {
-          img: require("../assets/img/gallery/gallery3.png"),
+          img: require("../assets/img/gallery/gallery4.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery5.png"),
+          alt: "Gallery photo."
+        }
+      ],
+      photosCol3: [
+        {
+          img: require("../assets/img/gallery/gallery9.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery1.png"),
           alt: "Gallery photo."
         },
         {
@@ -35,17 +74,23 @@ export default {
         {
           img: require("../assets/img/gallery/gallery4.png"),
           alt: "Gallery photo."
-        },
+        }
+      ],
+      photosCol4: [
         {
-          img: require("../assets/img/gallery/gallery6.png"),
+          img: require("../assets/img/gallery/gallery5.png"),
           alt: "Gallery photo."
         },
         {
-          img: require("../assets/img/gallery/gallery8.png"),
+          img: require("../assets/img/gallery/gallery9.png"),
           alt: "Gallery photo."
         },
         {
-          img: require("../assets/img/gallery/gallery7.png"),
+          img: require("../assets/img/gallery/gallery1.png"),
+          alt: "Gallery photo."
+        },
+        {
+          img: require("../assets/img/gallery/gallery4.png"),
           alt: "Gallery photo."
         }
       ],
@@ -55,17 +100,20 @@ export default {
 </script>
 
 <style>
-.grid--gallery {
-  display: grid;
+.gallery {
+  display: flex;
   gap: 1.6rem;
-  grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
-  grid-auto-rows: 1.6rem;
+}
+
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .gallery-img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 </style>

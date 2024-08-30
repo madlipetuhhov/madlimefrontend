@@ -3,19 +3,19 @@
     <Gallery/>
   </section>
 
-  <section class="section-cta">
-    <CTA img="cta3.png"
-         alt="Photo of beautiful nature."
-         text="Loodusest inspireeritud fotograafia."
-         btnText="Tutvu minu looga"
-         btnVariant="btn--dark"
-         textColor="#1F1B22"
-         link="/minust"/>
-  </section>
+<!--  <section class="section-cta">-->
+<!--    <CTA img="cta3.png"-->
+<!--         alt="Photo of beautiful nature."-->
+<!--         text="Loodusest inspireeritud fotograafia."-->
+<!--         btnText="Tutvu minu looga"-->
+<!--         btnVariant="btn&#45;&#45;dark"-->
+<!--         textColor="#1F1B22"-->
+<!--         link="/minust"/>-->
+<!--  </section>-->
 
-  <div class="section-footer">
-    <Footer/>
-  </div>
+<!--  <div class="section-footer">-->
+<!--    <Footer/>-->
+<!--  </div>-->
 </template>
 
 <script>
