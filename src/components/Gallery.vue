@@ -82,7 +82,7 @@ export default {
           alt: "Gallery photo."
         },
         {
-          img: require("../assets/img/gallery/gallery9.png"),
+          img: require("../assets/img/gallery/gallery4.png"),
           alt: "Gallery photo."
         },
         {
@@ -90,7 +90,7 @@ export default {
           alt: "Gallery photo."
         },
         {
-          img: require("../assets/img/gallery/gallery4.png"),
+          img: require("../assets/img/gallery/gallery9.png"),
           alt: "Gallery photo."
         }
       ],
@@ -102,13 +102,13 @@ export default {
 <style>
 .gallery {
   display: flex;
-  gap: 1.6rem;
+  gap: 0.8rem;
 }
 
 .gallery-col {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 0.8rem;
 }
 
 .gallery-img {
