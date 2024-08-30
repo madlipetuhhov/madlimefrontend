@@ -1,6 +1,6 @@
 <template>
   <section class="section-portfolio section-first">
-    <Gallery/>
+    <Gallery isMain="true"/>
   </section>
 
   <section class="section-cta">

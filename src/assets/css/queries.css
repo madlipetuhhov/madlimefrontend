@@ -1,18 +1,34 @@
 /* BELOW 1344px (SMALL DESKTOPS)*/
 /* seda vb ei tulegi */
-
+@media (max-width: 84em) {
+}
 
 /* BELOW 1200px (LANDSCAPE TABLETS)*/
 /* siin etapis oluline fonte ja whitespace väiksemaks muuta */
-
+@media (max-width: 75em) {
+}
 
 /* BELOW 944px (TABLETS)*/
 /* siin etapis tulpade vähemaks võtmine - üksteise alla ja tuleb juurde mobile navigation */
+@media (max-width: 59em) {
+    .gallery {
+        flex-wrap: wrap; /* Allows the columns to wrap to the next line */
+    }
 
+    .gallery-col {
+        flex-basis: calc(50% - 0.8rem); /* 50% width minus the gap */
+    }
+}
 
 /* BELOW 704px (SMALLER TABLETS)*/
 /* kõik mis 3 ja 4 tulbas muuta 2 tulbaseks */
-
+@media (max-width: 44em) {
+}
 
 /* BELOW 544px (PHONES)*/
 /* enamasti kõik mis 2 tulpa, muuta 1 tulbaliseks */
+@media (max-width: 34em) {
+    .gallery-col {
+        flex-basis: 100%; /* Full width for single column layout */
+    }
+}

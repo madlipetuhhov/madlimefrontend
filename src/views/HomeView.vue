@@ -24,7 +24,7 @@
     </section>
 
     <section class="section-gallery">
-        <Gallery/>
+        <GalleryHome/>
     </section>
 
     <section class="section-testimonials">
@@ -50,14 +50,14 @@
 
 <script>
 import Hero from "@/components/Hero.vue";
-import Gallery from "@/components/Gallery.vue";
 import Testimonials from "@/components/Testimonials.vue";
 import CTA from "@/components/CTA.vue";
 import Footer from "@/components/Footer.vue";
+import GalleryHome from "@/components/GalleryHome.vue";
 
 export default {
   name: 'HomeView',
-  components: {Footer, CTA, Testimonials, Gallery, Hero},
+  components: {GalleryHome, Footer, CTA, Testimonials, Hero},
   data() {
     return {
       testimonialsInfo: [],

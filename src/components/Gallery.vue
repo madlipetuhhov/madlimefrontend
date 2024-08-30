@@ -16,8 +16,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "Gallery",
   data() {
@@ -109,6 +107,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  flex: 1; /* This makes sure the columns take equal width */
 }
 
 .gallery-img {
