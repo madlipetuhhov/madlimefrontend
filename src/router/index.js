@@ -39,9 +39,10 @@ const routes = [
         component: ConditionsView
     },
     {
-        path: '/foto',
+        path: '/foto/:id',
         name: 'photoRoute',
-        component: PhotoView
+        component: PhotoView,
+        props: route => ({ photoId: route.params.id })
     },
 ]
 
