@@ -1,15 +1,15 @@
 <template>
-  <div class="container gallery-row">
-    <div class="gallery-col">
+  <div class="container gallery-row--home">
+    <div class="gallery-col--home">
       <img class="gallery-img" v-for="photo in photosCol1" :key="photo.img" :src="photo.img" :alt="photo.alt">
     </div>
-    <div class="gallery-col">
+    <div class="gallery-col--home">
       <img class="gallery-img" v-for="photo in photosCol2" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
     </div>
-    <div class="gallery-col">
+    <div class="gallery-col--home">
       <img class="gallery-img" v-for="photo in photosCol3" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
     </div>
-    <div class="gallery-col">
+    <div class="gallery-col--home">
       <img class="gallery-img" v-for="photo in photosCol4" :key="photo.img" :src="photo.img" :alt="photo.alt"/>
     </div>
   </div>
@@ -97,3 +97,24 @@ export default {
   },
 }
 </script>
+
+<style>
+.gallery-row--home {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.gallery-col--home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+}
+
+</style>

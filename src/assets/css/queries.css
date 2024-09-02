@@ -12,15 +12,16 @@
 /* BELOW 944px (TABLETS)*/
 /* siin etapis tulpade vähemaks võtmine - üksteise alla ja tuleb juurde mobile navigation */
 @media (max-width: 59em) {
-    .gallery-row {
-        flex-wrap: wrap;
-    }
-
     .gallery-col {
         flex-basis: calc(50% - 0.8rem);
     }
 
-    .instagram-grid{
+    .gallery-col--home:nth-child(4),
+    .gallery-col--home:nth-child(3) {
+        display: none;
+    }
+
+    .instagram-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -33,7 +34,7 @@
 /* BELOW 704px (SMALLER TABLETS)*/
 /* kõik mis 3 ja 4 tulbas muuta 2 tulbaseks */
 @media (max-width: 44em) {
-    .instagram-grid{
+    .instagram-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -49,7 +50,13 @@
         flex-basis: 100%;
     }
 
-    .instagram-grid{
+    .gallery-col--home:nth-child(4),
+    .gallery-col--home:nth-child(3),
+    .gallery-col--home:nth-child(2) {
+        display: none;
+    }
+
+    .instagram-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 

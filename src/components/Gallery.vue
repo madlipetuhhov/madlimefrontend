@@ -96,3 +96,24 @@ export default {
   },
 }
 </script>
+
+<style>
+.gallery-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.gallery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+}
+
+</style>
