@@ -95,6 +95,24 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
+/* GALLERY */
+ .gallery-row {
+     display: flex;
+     gap: 0.8rem;
+ }
+
+.gallery-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1; /* This makes sure the columns take equal width */
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+}
+
 /* SECTIONS GLOBAL STYLES */
 .section-first {
     padding: 15rem 0 9.6rem 0;

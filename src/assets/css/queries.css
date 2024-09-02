@@ -11,7 +11,7 @@
 /* BELOW 944px (TABLETS)*/
 /* siin etapis tulpade vähemaks võtmine - üksteise alla ja tuleb juurde mobile navigation */
 @media (max-width: 59em) {
-    .gallery {
+    .gallery-row {
         flex-wrap: wrap; /* Allows the columns to wrap to the next line */
     }
 

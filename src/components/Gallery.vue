@@ -1,5 +1,5 @@
 <template>
-  <div class="container gallery">
+  <div class="container gallery-row">
     <div class="gallery-col">
       <img class="gallery-img" v-for="photo in photosCol1" :key="photo.img" :src="photo.img" :alt="photo.alt">
     </div>
@@ -96,23 +96,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.gallery {
-  display: flex;
-  gap: 0.8rem;
-}
-
-.gallery-col {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  flex: 1; /* This makes sure the columns take equal width */
-}
-
-.gallery-img {
-  width: 100%;
-  height: auto;
-}
-
-</style>
