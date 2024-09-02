@@ -83,15 +83,13 @@ export default {
 }
 
 .instagram-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.8rem;
 }
 
 .instagram-post {
-  width: 21rem;
-  height: 21rem;
+  width: 100%;
   overflow: hidden;
 }
 

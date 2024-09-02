@@ -6,29 +6,55 @@
 /* BELOW 1200px (LANDSCAPE TABLETS)*/
 /* siin etapis oluline fonte ja whitespace väiksemaks muuta */
 @media (max-width: 75em) {
+
 }
 
 /* BELOW 944px (TABLETS)*/
 /* siin etapis tulpade vähemaks võtmine - üksteise alla ja tuleb juurde mobile navigation */
 @media (max-width: 59em) {
     .gallery-row {
-        flex-wrap: wrap; /* Allows the columns to wrap to the next line */
+        flex-wrap: wrap;
     }
 
     .gallery-col {
-        flex-basis: calc(50% - 0.8rem); /* 50% width minus the gap */
+        flex-basis: calc(50% - 0.8rem);
     }
+
+    .instagram-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .instagram-post:nth-child(n+9) {
+        display: none;
+    }
+
 }
 
 /* BELOW 704px (SMALLER TABLETS)*/
 /* kõik mis 3 ja 4 tulbas muuta 2 tulbaseks */
 @media (max-width: 44em) {
+    .instagram-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .instagram-post:nth-child(n+5) {
+        display: none;
+    }
 }
 
 /* BELOW 544px (PHONES)*/
 /* enamasti kõik mis 2 tulpa, muuta 1 tulbaliseks */
 @media (max-width: 34em) {
     .gallery-col {
-        flex-basis: 100%; /* Full width for single column layout */
+        flex-basis: 100%;
     }
+
+    .instagram-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instagram-post:nth-child(n+3) {
+        display: none;
+    }
+
 }
