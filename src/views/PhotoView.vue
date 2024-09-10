@@ -1,10 +1,10 @@
 <template>
   <div class="container section-first photo-view">
     <div class="photo" v-if="photo">
-      <img :src="photo.img" :alt="photo.alt" :key="photo.id"/>
+      <img class="photo-img" :src="photo.img" :alt="photo.alt" :key="photo.id"/>
 
       <button class="icon close--x" @click="closePhoto">
-        <PhX :size="32"/>
+        <PhX :size="27"/>
       </button>
       <button class="icon caret--left" @click="prevPhoto">
         <PhCaretLeft :size="32"/>
@@ -89,9 +89,14 @@ export default {
   position: relative;
 }
 
+.photo-img {
+  max-width: 100%;
+}
+
 .close--x {
   top: 0;
   right: 0;
+  padding: 4px;
 }
 
 
