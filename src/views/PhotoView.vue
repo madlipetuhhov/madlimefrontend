@@ -1,7 +1,10 @@
 <template>
   <div class="container section-first photo-view">
     <div class="content" v-if="photo">
-      <button class="close-btn" @click="closePhoto">Close</button>
+
+      <button class="icon close--x" @click="closePhoto">
+        <PhX :size="32"/>
+      </button>
       <img :src="photo.img" :alt="photo.alt" :key="photo.id"/>
     </div>
     <div v-else>
@@ -17,10 +20,11 @@
 <script>
 import Footer from "@/components/Footer.vue";
 import router from "@/router";
+import {PhX} from "@phosphor-icons/vue";
 
 export default {
   name: "PhotoView",
-  components: {Footer},
+  components: {PhX, Footer},
   props: {
     photoId: String
   },
@@ -78,4 +82,6 @@ export default {
   max-width: 90%;
   height: auto;
 }
+
+
 </style>

@@ -10,11 +10,11 @@
         </blockquote>
       </figure>
 
-      <button class="caret caret--left" @click="prevTestimonial">
-        <PhCaretLeft :size="32" weight="light" class="caret-icon"/>
+      <button class="icon caret--left" @click="prevTestimonial">
+        <PhCaretLeft :size="32"/>
       </button>
-      <button class="caret caret--right" @click="nextTestimonial">
-        <PhCaretRight :size="32" weight="light" class="caret-icon"/>
+      <button class="icon caret--right" @click="nextTestimonial">
+        <PhCaretRight :size="32"/>
       </button>
 
       <div class="pagination">

@@ -4,10 +4,10 @@
       <div class="accordion-item" v-for="(item, index) in accordionItems" :key="index">
         <div :class="['accordion-header', variant]" @click="openSection(index)">
           <h3 class="heading-tertiary">{{ item.title }}</h3>
-          <button v-if="activeIndex !== index" class="caret caret--down">
+          <button v-if="activeIndex !== index" class="icon caret--down">
             <PhCaretDown :size="32" weight="light" class="caret-icon"/>
           </button>
-          <button v-if="activeIndex === index" class="caret caret--up">
+          <button v-if="activeIndex === index" class="icon caret--up">
             <PhCaretUp :size="32" weight="light" class="caret-icon"/>
           </button>
         </div>

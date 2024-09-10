@@ -179,16 +179,17 @@ body {
 
 /* CARET */
 
-.caret {
+.icon {
     cursor: pointer;
     position: absolute;
     background: transparent none;
     border: none;
     outline: none;
     transition: all 0.3s ease;
+    stroke: #1F1B22;
 }
 
-.caret:hover {
+.icon:hover {
     color: #9B89A9;
 }
 
@@ -202,8 +203,4 @@ body {
     right: 4rem;
     top: 50%;
     transform: translate(50%, -50%);
-}
-
-.caret-icon {
-    stroke: #1F1B22;
 }
