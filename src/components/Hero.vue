@@ -6,12 +6,14 @@
       <img class="hero-img" :src="hero.img" :alt="hero.alt"/>
     </figure>
 
-    <button class="icon caret--left hero-btn" @click="prevSlide">
-      <PhCaretLeft :size="32"/>
-    </button>
-    <button class="icon caret--right hero-btn" @click="nextSlide">
-      <PhCaretRight :size="32"/>
-    </button>
+    <div class="container">
+      <button class="icon caret--left hero-btn" @click="prevSlide">
+        <PhCaretLeft :size="32"/>
+      </button>
+      <button class="icon caret--right hero-btn" @click="nextSlide">
+        <PhCaretRight :size="32"/>
+      </button>
+    </div>
 
     <div class="pagination hero-pagination">
       <span

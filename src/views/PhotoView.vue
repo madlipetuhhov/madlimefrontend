@@ -1,12 +1,19 @@
 <template>
   <div class="container section-first photo-view">
-    <div class="content" v-if="photo">
+    <div class="photo" v-if="photo">
+      <img :src="photo.img" :alt="photo.alt" :key="photo.id"/>
 
       <button class="icon close--x" @click="closePhoto">
         <PhX :size="32"/>
       </button>
-      <img :src="photo.img" :alt="photo.alt" :key="photo.id"/>
+      <button class="icon caret--left" @click="prevPhoto">
+        <PhCaretLeft :size="32"/>
+      </button>
+      <button class="icon caret--right" @click="nextPhoto">
+        <PhCaretRight :size="32"/>
+      </button>
     </div>
+
     <div v-else>
       <p>Oota natuke, foto laeb...</p>
     </div>
@@ -20,11 +27,11 @@
 <script>
 import Footer from "@/components/Footer.vue";
 import router from "@/router";
-import {PhX} from "@phosphor-icons/vue";
+import {PhCaretLeft, PhCaretRight, PhX} from "@phosphor-icons/vue";
 
 export default {
   name: "PhotoView",
-  components: {PhX, Footer},
+  components: {PhCaretRight, PhCaretLeft, PhX, Footer},
   props: {
     photoId: String
   },
@@ -78,9 +85,13 @@ export default {
   padding: 1rem;
 }
 
-.photo-detail img {
-  max-width: 90%;
-  height: auto;
+.photo {
+  position: relative;
+}
+
+.close--x {
+  top: 0;
+  right: 0;
 }
 
 
