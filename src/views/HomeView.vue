@@ -9,15 +9,15 @@
     <section class="section-menu">
       <div class="container grid grid--3-cols">
         <div class="menu-box">
-          <a class="menu-no" href="/portfoolio">01</a>
+          <a class="menu-no" href="/portfoolio">1</a>
           <a class="heading-secondary menu-link" href="/portfoolio">Tutvu loominguga</a>
         </div>
         <div class="menu-box">
-          <a class="menu-no" href="/hind">02</a>
+          <a class="menu-no" href="/hind">2</a>
           <a class="heading-secondary  menu-link" href="/hind">Vaata hindasid</a>
         </div>
         <div class="menu-box">
-          <a class="menu-no" href="/kontakt">03</a>
+          <a class="menu-no" href="/kontakt">3</a>
           <a class="heading-secondary  menu-link" href="/kontakt">Võta ühendust</a>
         </div>
       </div>

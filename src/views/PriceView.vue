@@ -65,14 +65,14 @@
     <h2 class="subheading heading-center">Kogemus</h2>
     <div class="container grid grid--4-cols">
       <div class="experience">
-        <div class="experience-no">01</div>
+        <div class="experience-no">1</div>
         <h3 class="heading-tertiary experience-heading">Saada oma soovid</h3>
         <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
           ut labore et dolore magna aliqua.</p>
       </div>
       <div class="experience">
-        <div class="experience-no">02</div>
+        <div class="experience-no">2</div>
         <h3 class="heading-tertiary experience-heading">Planeerimine & moodboard</h3>
         <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
@@ -81,14 +81,14 @@
           ut labore et dolore magna aliqua.</p>
       </div>
       <div class="experience">
-        <div class="experience-no">03</div>
+        <div class="experience-no">3</div>
         <h3 class="heading-tertiary experience-heading">Fotosessioon</h3>
         <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
           ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. </p>
       </div>
       <div class="experience">
-        <div class="experience-no">04</div>
+        <div class="experience-no">4</div>
         <h3 class="heading-tertiary experience-heading">Fotode valik & kättesaamine</h3>
         <p class="experience-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt
