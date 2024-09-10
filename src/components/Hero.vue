@@ -1,10 +1,10 @@
 <template>
-<!--  todo: smooth transition-->
   <div class="hero" id="hero">
-    <figure class="hero-slide" v-for="(hero, index) in slides"
-            :key="index" v-show="index === currentSlide">
-      <img class="hero-img" :src="hero.img" :alt="hero.alt"/>
-    </figure>
+    <div class="hero-slides">
+      <figure class="hero-slide" :key="currentSlide">
+        <img class="hero-img" :src="slides[currentSlide].img" :alt="slides[currentSlide].alt" />
+      </figure>
+    </div>
 
     <div class="container">
       <button class="icon caret--left hero-btn" @click="prevSlide">
@@ -64,7 +64,7 @@ export default {
     },
     startAutoRotate() {
       if (!this.autoRotationInterval) {
-        this.autoRotationInterval = setInterval(this.nextSlide, 5000)
+        this.autoRotationInterval = setInterval(this.nextSlide, 8000)
       }
     },
     stopAutoRotate() {
@@ -93,17 +93,22 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 1;
 }
 
-.hero-slide{
-  transition: transform 1s ease;
+.hero-slides {
+  display: flex;
+  transition: transform 3s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
+
+.hero-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
 
 .hero-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
