@@ -6,12 +6,39 @@
 /* BELOW 1200px (LANDSCAPE TABLETS)*/
 /* siin etapis oluline fonte ja whitespace väiksemaks muuta */
 @media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
 
+    .grid {
+        gap: 4.8rem;
+    }
+
+    .section-instagram {
+        padding: 6.4rem 0;
+    }
+
+    .section-cta {
+        padding: 6.4rem 0;
+    }
+
+    .section-footer {
+        padding: 6.4rem 0;
+    }
+
+    .menu-no:link,
+    .menu-no:visited {
+        font-size: 4.4rem;
+    }
 }
 
 /* BELOW 944px (TABLETS)*/
 /* siin etapis tulpade vähemaks võtmine - üksteise alla ja tuleb juurde mobile navigation */
 @media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
     .gallery-col {
         flex-basis: calc(50% - 0.8rem);
     }
