@@ -35,6 +35,7 @@ export default {
     }
   },
   methods: {
+    // todo: kui ei ole hero peal, siis sticky.
     handleScroll() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop
       const hero = document.getElementById('hero')
